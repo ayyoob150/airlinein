@@ -1,10 +1,10 @@
+import Card from '@/components/qrcode/Card'
 import React from 'react'
 
 const page = () => {
     return (
-        <div className='flex justify-center items-center h-screen'>
-            <h1 className='text-4xl font-bold'>Book Your Flight</h1>
-            <div>this is the change</div>
+        <div >
+            <Card />
         </div>
     )
 }

@@ -1,67 +1,95 @@
-import React from 'react';
-
-const Footer = () => {
+export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white px-6 py-10">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-        {/* Branding */}
+    <footer className="bg-[#002244] text-white px-6 py-12">
+      <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-6 text-sm">
+        {/* About Alaska */}
         <div>
-          <h2 className="text-2xl font-bold text-blue-400">AirlineIn</h2>
-          <p className="mt-2 text-sm text-gray-400">
-            Your trusted travel partner in the skies.
-          </p>
-        </div>
-
-        {/* Contact Info */}
-        <div>
-          <h3 className="text-xl font-semibold mb-3">Contact for Booking</h3>
-          <ul className="space-y-2 text-sm text-gray-300">
-            <li>
-              <strong>Email: </strong>
-              <a
-                href="mailto:booking@airlinein.com"
-                className="text-blue-400 hover:underline"
-              >
-                booking@airlineinsupport.com
-              </a>
-            </li>
-            <li>
-              <strong>Phone: </strong>
-              <a
-                href="tel:+1234567890"
-                className="text-blue-400 hover:underline"
-              >
-                +1 234 567 890
-              </a>
-            </li>
-            <li>
-              <strong>Office:</strong> 123 Skyway Ave, New York, NY
-            </li>
+          <h3 className="font-bold mb-2">About Alaska</h3>
+          <ul className="space-y-1">
+            <li>Who we are</li>
+            <li>Careers <sup>ⓘ</sup></li>
+            <li>Newsroom <sup>ⓘ</sup></li>
+            <li>Investor relations <sup>ⓘ</sup></li>
+            <li>Legal</li>
+            <li>Contract of carriage</li>
+            <li className="font-bold">Privacy notice</li>
           </ul>
         </div>
 
-        {/* Social Links */}
+        {/* Customer service */}
         <div>
-          <h3 className="text-xl font-semibold mb-3">Follow Us</h3>
-          <div className="flex flex-col space-y-2">
-            <a href="#" className="hover:text-blue-400 transition">
-              <i className="fab fa-facebook-f mr-2"></i> Facebook
-            </a>
-            <a href="#" className="hover:text-blue-400 transition">
-              <i className="fab fa-instagram mr-2"></i> Instagram
-            </a>
-            <a href="#" className="hover:text-blue-400 transition">
-              <i className="fab fa-twitter mr-2"></i> Twitter
-            </a>
+          <h3 className="font-bold mb-2">Customer service</h3>
+          <ul className="space-y-1">
+            <li>Help center</li>
+            <li>Feedback and complaints</li>
+            <li>Travel advisories</li>
+            <li>REAL ID</li>
+            <li>Customer service commitment</li>
+            <li>Canada - air travel rights</li>
+            <li>Tarmac delay plan</li>
+            <li>Site map</li>
+          </ul>
+        </div>
+
+        {/* Products and services */}
+        <div>
+          <h3 className="font-bold mb-2">Products and services</h3>
+          <ul className="space-y-1">
+            <li>Optional services and fees</li>
+            <li>Corporate travel</li>
+            <li>EasyBiz</li>
+            <li>Travel agents</li>
+            <li>Cargo <sup>↗</sup></li>
+            <li>Gift certificates</li>
+            <li>Travel insurance</li>
+          </ul>
+        </div>
+
+        {/* Deals, Feedback, Mobile */}
+        <div>
+          <h3 className="font-bold mb-2">Get deals</h3>
+          <p className="mb-3">✉️ Sign up now</p>
+          <h3 className="font-bold mb-2">We care a lot</h3>
+          <p className="mb-3">💬 Give feedback ↗</p>
+          <h3 className="font-bold mb-2">Mobile</h3>
+          <p>📱 Get the app</p>
+        </div>
+
+        {/* Social media */}
+        <div>
+          <h3 className="font-bold mb-2">Follow us ↗</h3>
+          <div className="flex items-center space-x-4 text-xl">
+            <span><img src="facebook.png" className="w-8 invert" /></span>
+            <span><img src="twitter.png" className="w-8 invert" /></span>
+            <span><img src="instagram.png" className="w-8 invert" /></span>
+            <span><img src="youtube.png" className="w-10 invert" /></span>
           </div>
+          <p className="mt-3">Shop our company store <sup>ⓘ</sup></p>
         </div>
       </div>
 
-      <div className="border-t border-gray-700 mt-8 pt-4 text-center text-sm text-gray-500">
-        &copy; 2025 AirlineIn. All rights reserved.
+      {/* Popular destinations */}
+      <div className="max-w-7xl mx-auto mt-12 text-sm">
+        <h4 className="font-bold mb-2 text-white">Popular destinations</h4>
+        <p className="text-white mb-4">
+          All destinations | City to city routes | Flights to Hawaii | Flights to Seattle | Flights to San Francisco | Flights to Los Angeles | Flights to Las Vegas
+        </p>
+
+        <p className="text-gray-400 text-xs mt-2">
+          ↗ Notice indicator that this external link may not follow the same accessibility or privacy policies as Alaska Airlines.
+        </p>
+        <p className="text-gray-400 text-xs mt-4">
+          ⓘ Notice indicator to alert users that action will result in the browser opening a new tab or window.
+        </p>
+        <p className="text-gray-500 text-xs mt-4">
+          © 2025 Alaska Airlines, Inc. All rights reserved.
+        </p>
       </div>
     </footer>
   );
-};
+}
 
-export default Footer;
+
+
+
+
