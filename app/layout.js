@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-let home = "my home";
+let home = "home";
 export const metadata = {
   title: home,
   description: "home page seo",
@@ -20,7 +20,7 @@ export const metadata = {
   content: "iRail check available seats pnr route of all train at once",
   robots: "index, follow",
   alternates: {
-    canonical: "https://localhost:3000",
+    canonical: "http://localhost:3000",
   },
 };
 

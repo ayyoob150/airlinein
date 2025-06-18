@@ -1,18 +1,18 @@
 export default function Footer() {
   return (
-    <footer className="bg-[#002244] text-white px-6 py-12">
+    <footer className="bg-[#400950] text-white px-6 py-12">
       <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-6 text-sm">
         {/* About Alaska */}
         <div>
           <h3 className="font-bold mb-2">About Alaska</h3>
           <ul className="space-y-1">
-            <li>Who we are</li>
-            <li>Careers <sup>ⓘ</sup></li>
-            <li>Newsroom <sup>ⓘ</sup></li>
-            <li>Investor relations <sup>ⓘ</sup></li>
-            <li>Legal</li>
-            <li>Contract of carriage</li>
-            <li className="font-bold">Privacy notice</li>
+            <HoverGradient>Who we are</HoverGradient>
+            <HoverGradient>Careers <sup>ⓘ</sup></HoverGradient>
+            <HoverGradient>Newsroom <sup>ⓘ</sup></HoverGradient>
+            <HoverGradient>Investor relations <sup>ⓘ</sup></HoverGradient>
+            <HoverGradient>Legal</HoverGradient>
+            <HoverGradient>Contract of carriage</HoverGradient>
+            <HoverGradient className="font-bold">Privacy notice</HoverGradient>
           </ul>
         </div>
 
@@ -20,14 +20,27 @@ export default function Footer() {
         <div>
           <h3 className="font-bold mb-2">Customer service</h3>
           <ul className="space-y-1">
-            <li>Help center</li>
-            <li>Feedback and complaints</li>
-            <li>Travel advisories</li>
-            <li>REAL ID</li>
-            <li>Customer service commitment</li>
-            <li>Canada - air travel rights</li>
-            <li>Tarmac delay plan</li>
-            <li>Site map</li>
+            <HoverGradient>Help center</HoverGradient>
+            <HoverGradient>Feedback and complaints</HoverGradient>
+            <HoverGradient>Travel advisories</HoverGradient>
+            <HoverGradient>REAL ID</HoverGradient>
+            <HoverGradient>Customer service commitment</HoverGradient>
+            <HoverGradient>Canada - air travel rights</HoverGradient>
+            <HoverGradient>Tarmac delay plan</HoverGradient>
+            <HoverGradient>Site map</HoverGradient>
+          </ul>
+        </div>
+        <div>
+          <h3 className="font-bold mb-2">Flight service</h3>
+          <ul className="space-y-1">
+            <HoverGradient>Delta</HoverGradient>
+            <HoverGradient>United Airlines</HoverGradient>
+            <HoverGradient>British Airways</HoverGradient>
+            <HoverGradient>Allegiant Air</HoverGradient>
+            <HoverGradient>Hawaiian Airlines</HoverGradient>
+            <HoverGradient>Alaska Airlines</HoverGradient>
+            <HoverGradient>Envoy Air</HoverGradient>
+            <HoverGradient>PSA Airlines</HoverGradient>
           </ul>
         </div>
 
@@ -35,13 +48,13 @@ export default function Footer() {
         <div>
           <h3 className="font-bold mb-2">Products and services</h3>
           <ul className="space-y-1">
-            <li>Optional services and fees</li>
-            <li>Corporate travel</li>
-            <li>EasyBiz</li>
-            <li>Travel agents</li>
-            <li>Cargo <sup>↗</sup></li>
-            <li>Gift certificates</li>
-            <li>Travel insurance</li>
+            <HoverGradient>Optional services and fees</HoverGradient>
+            <HoverGradient>Corporate travel</HoverGradient>
+            <HoverGradient>EasyBiz</HoverGradient>
+            <HoverGradient>Travel agents</HoverGradient>
+            <HoverGradient>Cargo <sup>↗</sup></HoverGradient>
+            <HoverGradient>Gift certificates</HoverGradient>
+            <HoverGradient>Travel insurance</HoverGradient>
           </ul>
         </div>
 
@@ -89,6 +102,12 @@ export default function Footer() {
   );
 }
 
+function HoverGradient({children }) {
+  return (
+    <li className="hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-bl hover:from-violet-500 hover:to-fuchsia-500 hover:font-semibold cursor-pointer">{children}</li>
+
+  );
+}
 
 
 
