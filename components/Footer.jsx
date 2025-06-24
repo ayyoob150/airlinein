@@ -33,8 +33,10 @@ export default function Footer() {
         <div>
           <h3 className="font-bold mb-2">Flight service</h3>
           <ul className="space-y-1">
-            <HoverGradient>Delta</HoverGradient>
+            <HoverGradient>Delta Airline</HoverGradient>
             <HoverGradient>United Airlines</HoverGradient>
+            <HoverGradient>JetBlue Airline</HoverGradient>
+            <HoverGradient>Spirit Airlines</HoverGradient>
             <HoverGradient>British Airways</HoverGradient>
             <HoverGradient>Allegiant Air</HoverGradient>
             <HoverGradient>Hawaiian Airlines</HoverGradient>
