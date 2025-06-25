@@ -63,10 +63,10 @@ const Home = () => (
           alt="Delta customer serice"
         />
       </div>
-      <div className="mt-16  w-[95%] md:w-[70%]  bg-white rounded-2xl shadow mx-auto flex justify-between gap-5 flex-wrap">
+      <div className="mt-16 mx-4 bg-white rounded-2xl shadow flex justify-between gap-5 flex-wrap">
         <div className="w-[60%]">
-          <h2 className="pl-4 pt-8 text-3xl font-semibold font-sans text-slate-700 ">
-            How we works!
+          <h2 className="pl-4 pt-8 text-3xl font-semibold font-sans  text-transparent bg-clip-text bg-gradient-to-br from-fuchsia-500 to-violet-500  ">
+            How we works! 👩‍💻
           </h2>
           <p className="  p-4 font-medium font-sans text-slate-600">
             At our platform, we've designed a system that makes your journey
@@ -87,16 +87,16 @@ const Home = () => (
         />
       </div>
       <div className=" flex gap-16 mt-16 w-[70%] mx-auto">
-        <div className="bg-primary w-fit h-88 p-2 rounded-xl shadow-md border border-slate-100">
-          <div className="border-2 border-primary/70 rounded-lg w-fit p-6 bg-white ">
+        <div className="bg-gradient-to-bl from-violet-500 to-fuchsia-500 w-fit h-88 p-2 rounded-xl shadow-md border border-slate-100">
+          <div className=" rounded-lg w-fit p-6 bg-white ">
             <CallQRCode phoneNumber="+12152688872" />
           </div>
-          <div className="text-white font-bold text-3xl mt-5.5 text-center">
+          <div className="text-[#00478f80] font-bold text-3xl mt-5.5 text-center">
             Call us
           </div>
         </div>
         <div>
-          <div className="mt-10 text-5xl font-semibold font-sans text-primary ">For quick call !</div>
+          <div className="mt-10 text-5xl font-semibold font-sans text-transparent bg-clip-text bg-gradient-to-bl from-violet-500 to-fuchsia-500 ">For quick call !</div>
           <div className="mt-2 text-4xl font-semibold font-sans text-primary/90 ">Scan Now !</div>
           <div className="mt-3 text-lg font-semibold font-sans text-slate-700 ">We provide best customer executive to assist you on call, To make you life stresless and enjouful. We always happy to help you.</div>
 
