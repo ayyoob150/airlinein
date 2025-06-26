@@ -21,7 +21,7 @@ export default function Page() {
 
       <main className="bg-white text-gray-900 font-sans px-6 md:px-20 py-10 space-y-14 max-w-7xl mx-auto">
         <div className="space-y-6">
-          <h1 className="text-4xl md:text-6xl font-bold text-blue-900">
+          <h1 className="text-3xl md:text-5xl font-bold text-blue-900">
             ✈️ United Airlines – Company Profile
           </h1>
           <Image
@@ -32,17 +32,23 @@ export default function Page() {
             className="rounded-2xl shadow-md w-full h-70"
           />
           <p className="text-lg leading-relaxed">
-            <strong className="text-lg leading-relaxed">Official Name</strong>: United Airlines, Inc.
+            <strong className="text-lg leading-relaxed">Official Name</strong>:
+            United Airlines, Inc.
             <br />
-            <strong className="text-lg leading-relaxed">Headquarters</strong>: Willis Tower (formerly Sears Tower),
-            Chicago, Illinois, USA
+            <strong className="text-lg leading-relaxed">Headquarters</strong>:
+            Willis Tower (formerly Sears Tower), Chicago, Illinois, USA
             <br />
-            <strong className="text-lg leading-relaxed">Year Founded</strong>: Traces its origins back to 1926 as
-            Varney Air Lines, officially rebranded as United Airlines in 1931
+            <strong className="text-lg leading-relaxed">Year Founded</strong>:
+            Traces its origins back to 1926 as Varney Air Lines, officially
+            rebranded as United Airlines in 1931
             <br />
-            <strong className="text-lg leading-relaxed">Parent Organization</strong>: United Airlines Holdings, Inc.
+            <strong className="text-lg leading-relaxed">
+              Parent Organization
+            </strong>
+            : United Airlines Holdings, Inc.
             <br />
-            <strong className="text-lg leading-relaxed">Airline Codes</strong>:<br />
+            <strong className="text-lg leading-relaxed">Airline Codes</strong>:
+            <br />
           </p>
           <ul className="list-disc list-inside text-lg">
             <li>IATA: UA</li>
@@ -52,7 +58,9 @@ export default function Page() {
         </div>
 
         <div className="space-y-6">
-          <h2 className="text-3xl font-semibold">🌐 Extensive Network and Global Operations</h2>
+          <h2 className="text-3xl font-semibold">
+            🌐 Extensive Network and Global Operations
+          </h2>
           <Image
             src="/placeholder-network.jpg"
             alt="Global Operations"
@@ -60,13 +68,24 @@ export default function Page() {
             height={600}
             className="rounded-2xl shadow-md w-full h-70"
           />
-          <strong className="text-lg leading-relaxed">✈️ Worldwide Flight Coverage</strong><br/>
+          <strong className="text-lg leading-relaxed">
+            ✈️ Worldwide Flight Coverage
+          </strong>
+          <br />
           <p className="text-lg leading-relaxed">
-            United Airlines proudly serves an expansive global network, connecting passengers to over 300 destinations spread across six continents. This extensive route map ensures connectivity to key business, leisure, and emerging markets worldwide.
+            United Airlines proudly serves an expansive global network,
+            connecting passengers to over 300 destinations spread across six
+            continents. This extensive route map ensures connectivity to key
+            business, leisure, and emerging markets worldwide.
           </p>
-          <strong className="text-lg leading-relaxed">🛫 Major Hub Airports</strong><br/>
+          <strong className="text-lg leading-relaxed">
+            🛫 Major Hub Airports
+          </strong>
+          <br />
           <p>
-            United’s strategic hub system underpins its robust network, optimizing flight connections across the globe. The airline operates major hubs at:
+            United’s strategic hub system underpins its robust network,
+            optimizing flight connections across the globe. The airline operates
+            major hubs at:
           </p>
 
           <ul className="list-disc list-inside text-lg">
@@ -78,11 +97,12 @@ export default function Page() {
             <li>Washington Dulles International Airport (IAD)</li>
             <li>Los Angeles International Airport (LAX)</li>
             <li>Guam International Airport (GUM)</li>
-            </ul>
-
+          </ul>
         </div>
-         <div className="space-y-6">
-          <h2 className="text-3xl font-semibold">🌐 Global Reach & Market Focus</h2>
+        <div className="space-y-6">
+          <h2 className="text-3xl font-semibold">
+            🌐 Global Reach & Market Focus
+          </h2>
           <Image
             src="/placeholder-network.jpg"
             alt="Global Operations"
@@ -93,19 +113,37 @@ export default function Page() {
           <p className="text-lg leading-relaxed">
             United is particularly renowned for its strength in:
           </p>
-         
 
           <ul className="list-disc list-inside text-lg">
-  <li><strong className="text-lg leading-relaxed">Transpacific routes</strong> connecting North America with Asia-Pacific</li>
-  <li><strong className="text-lg leading-relaxed">Transatlantic services</strong> between the U.S. and Europe</li>
-  <li><strong className="text-lg leading-relaxed">Extensive coverage</strong> in Latin America and the Caribbean</li>
-  <li><strong className="text-lg leading-relaxed">Dense domestic routes</strong> within the United States</li>
-</ul>
-<p>
-    This strategic focus enables United to serve both international business travelers and vacationers with seamless options.
-</p>
-
-
+            <li>
+              <strong className="text-lg leading-relaxed">
+                Transpacific routes
+              </strong>{" "}
+              connecting North America with Asia-Pacific
+            </li>
+            <li>
+              <strong className="text-lg leading-relaxed">
+                Transatlantic services
+              </strong>{" "}
+              between the U.S. and Europe
+            </li>
+            <li>
+              <strong className="text-lg leading-relaxed">
+                Extensive coverage
+              </strong>{" "}
+              in Latin America and the Caribbean
+            </li>
+            <li>
+              <strong className="text-lg leading-relaxed">
+                Dense domestic routes
+              </strong>{" "}
+              within the United States
+            </li>
+          </ul>
+          <p>
+            This strategic focus enables United to serve both international
+            business travelers and vacationers with seamless options.
+          </p>
         </div>
 
         <div className="space-y-6">
@@ -118,31 +156,53 @@ export default function Page() {
             className="rounded-2xl shadow-md w-full h-70"
           />
           <p className="text-lg leading-relaxed">
-            United Airlines operates one of the industry’s most diverse and advanced aircraft fleets, emphasizing fuel efficiency, passenger comfort, and sustainability.
+            United Airlines operates one of the industry’s most diverse and
+            advanced aircraft fleets, emphasizing fuel efficiency, passenger
+            comfort, and sustainability.
           </p>
-          <strong className="text-lg leading-relaxed">Fleet Breakdown</strong><br />
-          
-          <strong className="text-lg leading-relaxed">Mainline Aircraft:</strong><br />
+          <strong className="text-lg leading-relaxed">Fleet Breakdown</strong>
+          <br />
+
+          <strong className="text-lg leading-relaxed">
+            Mainline Aircraft:
+          </strong>
+          <br />
           <ul className="list-disc list-inside text-lg">
             <li>Boeing 737 Next Generation & MAX series</li>
             <li>Boeing 757, 767, 777, and the cutting-edge 787 Dreamliner</li>
             <li>Airbus A319 and A320 family</li>
           </ul>
-          <strong className="text-lg leading-relaxed">Regional Fleet (United Express):</strong><br />
+          <strong className="text-lg leading-relaxed">
+            Regional Fleet (United Express):
+          </strong>
+          <br />
           <ul className="list-disc list-inside text-lg">
             <li>Embraer E175 jets</li>
             <li>Bombardier CRJ series</li>
           </ul>
-          <strong className="text-lg leading-relaxed">Commitment to Fleet Modernization & Sustainability</strong>
-          <p>United is investing heavily in next-generation aircraft that offer improved fuel economy and reduced emissions. Notable initiatives include:
+          <strong className="text-lg leading-relaxed">
+            Commitment to Fleet Modernization & Sustainability
+          </strong>
+          <p>
+            United is investing heavily in next-generation aircraft that offer
+            improved fuel economy and reduced emissions. Notable initiatives
+            include:
           </p>
-      
-<ul className="list-disc list-inside text-lg">
-            <li>Large-scale orders for fuel-efficient models such as the Boeing 787 and Airbus A321XLR</li>
-            <li>Pioneering Sustainable Aviation Fuel (SAF) adoption to lower carbon footprint</li>
-            <li>Backing innovative electric and hydrogen-powered aircraft ventures, signaling a commitment to aviation’s sustainable future</li>
-          </ul>
 
+          <ul className="list-disc list-inside text-lg">
+            <li>
+              Large-scale orders for fuel-efficient models such as the Boeing
+              787 and Airbus A321XLR
+            </li>
+            <li>
+              Pioneering Sustainable Aviation Fuel (SAF) adoption to lower
+              carbon footprint
+            </li>
+            <li>
+              Backing innovative electric and hydrogen-powered aircraft
+              ventures, signaling a commitment to aviation’s sustainable future
+            </li>
+          </ul>
         </div>
 
         <div className="space-y-6">
@@ -156,18 +216,30 @@ export default function Page() {
             height={600}
             className="rounded-2xl shadow-md w-full h-70"
           />
-          <strong className="text-lg leading-relaxed">Star Alliance Leadership</strong>
+          <strong className="text-lg leading-relaxed">
+            Star Alliance Leadership
+          </strong>
           <p className="text-lg leading-relaxed">
-            As a founding member of the Star Alliance, United is part of the world’s largest airline alliance, providing customers with unmatched global connectivity and seamless travel experiences. Key alliance partners include industry giants like Lufthansa, Singapore Airlines, ANA, and Air Canada.
+            As a founding member of the Star Alliance, United is part of the
+            world’s largest airline alliance, providing customers with unmatched
+            global connectivity and seamless travel experiences. Key alliance
+            partners include industry giants like Lufthansa, Singapore Airlines,
+            ANA, and Air Canada.
           </p>
-          <strong className="text-lg leading-relaxed">Code-Sharing and Interline Cooperation</strong>
+          <strong className="text-lg leading-relaxed">
+            Code-Sharing and Interline Cooperation
+          </strong>
           <p className="text-lg leading-relaxed">
-           United maintains a broad network of code-share and interline agreements across every continent, allowing travelers to book convenient connecting flights worldwide under one ticket.
+            United maintains a broad network of code-share and interline
+            agreements across every continent, allowing travelers to book
+            convenient connecting flights worldwide under one ticket.
           </p>
         </div>
 
         <div className="space-y-6">
-          <h2 className="text-3xl font-semibold">💼 MileagePlus – The Premier Loyalty Program</h2>
+          <h2 className="text-3xl font-semibold">
+            💼 MileagePlus – The Premier Loyalty Program
+          </h2>
           <Image
             src="/placeholder-loyalty.jpg"
             alt="MileagePlus"
@@ -177,31 +249,58 @@ export default function Page() {
           />
 
           <p className="text-lg leading-relaxed">
-            United’s <strong>MileagePlus</strong> program is widely regarded as one of the most rewarding frequent flyer programs available, offering members a range of benefits including:
+            United’s <strong>MileagePlus</strong> program is widely regarded as
+            one of the most rewarding frequent flyer programs available,
+            offering members a range of benefits including:
           </p>
           <ul className="list-disc list-inside text-lg">
-  <li>Mile earning tied to fare class and elite status</li>
-  <li>Elite tiers with increasing privileges: Premier Silver, Gold, Platinum, and the elite 1K</li>
-  <li>Priority services such as early check-in, boarding, and baggage handling</li>
-  <li>Complimentary upgrades and access to exclusive United Clubs and Star Alliance lounges</li>
-</ul>
+            <li>Mile earning tied to fare class and elite status</li>
+            <li>
+              Elite tiers with increasing privileges: Premier Silver, Gold,
+              Platinum, and the elite 1K
+            </li>
+            <li>
+              Priority services such as early check-in, boarding, and baggage
+              handling
+            </li>
+            <li>
+              Complimentary upgrades and access to exclusive United Clubs and
+              Star Alliance lounges
+            </li>
+          </ul>
         </div>
 
         <div className="space-y-6">
-          <h2 className="text-3xl font-semibold">📊 Financial Strength and Workforce</h2>
-       <ul className="list-disc list-inside text-lg">
-  <li><strong>Public Listing:</strong> United Airlines Holdings, Inc. trades publicly on NASDAQ under the ticker symbol UAL</li>
-  <li><strong>2023 Revenue:</strong> Approximately $50+ billion, reflecting strong market recovery and operational growth</li>
-  <li><strong>Workforce:</strong> Around 90,000 dedicated employees worldwide, including flight crews, ground staff, and corporate personnel</li>
-</ul>
+          <h2 className="text-3xl font-semibold">
+            📊 Financial Strength and Workforce
+          </h2>
+          <ul className="list-disc list-inside text-lg">
+            <li>
+              <strong>Public Listing:</strong> United Airlines Holdings, Inc.
+              trades publicly on NASDAQ under the ticker symbol UAL
+            </li>
+            <li>
+              <strong>2023 Revenue:</strong> Approximately $50+ billion,
+              reflecting strong market recovery and operational growth
+            </li>
+            <li>
+              <strong>Workforce:</strong> Around 90,000 dedicated employees
+              worldwide, including flight crews, ground staff, and corporate
+              personnel
+            </li>
+          </ul>
 
           <p className="text-lg leading-relaxed">
-          United has demonstrated remarkable resilience following the challenges of the COVID-19 pandemic, rapidly restoring passenger volumes and profitability through adaptive business strategies.
+            United has demonstrated remarkable resilience following the
+            challenges of the COVID-19 pandemic, rapidly restoring passenger
+            volumes and profitability through adaptive business strategies.
           </p>
         </div>
 
         <div className="space-y-6">
-          <h2 className="text-3xl font-semibold">📜 Historical Milestones</h2>
+          <h2 className="text-3xl font-semibold">
+            📜 Milestones in United Airlines’ History
+          </h2>
           <Image
             src="/placeholder-history.jpg"
             alt="Milestones"
@@ -210,15 +309,39 @@ export default function Page() {
             className="rounded-2xl shadow-md w-full h-70"
           />
           <ul className="list-disc list-inside text-lg">
-            <li>1926: Founded as Varney Air Lines</li>
-            <li>2010: Merged with Continental Airlines</li>
-            <li>2020–22: Overcame pandemic challenges with innovation</li>
+            <li>
+              <strong>1926:</strong> Launched as Varney Air Lines, pioneering
+              airmail and early passenger service
+            </li>
+            <li>
+              <strong>1930s:</strong> Consolidation of multiple regional
+              carriers into United Air Lines, expanding domestic reach
+            </li>
+            <li>
+              <strong>1978:</strong> Capitalized on airline deregulation to grow
+              aggressively across new markets
+            </li>
+            <li>
+              <strong>2010:</strong> Merger with Continental Airlines, creating
+              a combined global powerhouse under the United brand but retaining
+              Continental’s iconic globe logo
+            </li>
+            <li>
+              <strong>2017:</strong> Managed significant public relations
+              challenges, which prompted a refocus on customer service and
+              corporate responsibility
+            </li>
+            <li>
+              <strong>2020–2022:</strong> Navigated the unprecedented impacts of
+              the pandemic, emerging with a renewed emphasis on innovation and
+              customer-centric solutions
+            </li>
           </ul>
         </div>
 
         <div className="space-y-6">
           <h2 className="text-3xl font-semibold">
-            🔧 Passenger Experience & Innovation
+            🔧 Innovation & Passenger Experience Enhancements
           </h2>
           <Image
             src="/placeholder-cabin.jpg"
@@ -228,36 +351,95 @@ export default function Page() {
             className="rounded-2xl shadow-md w-full h-70"
           />
           <p className="text-lg leading-relaxed">
-            United enhances flying with Polaris Business Class, upgraded
-            lounges, onboard Wi-Fi, and a user-friendly app for real-time travel
-            management.
+            United Airlines continually elevates the in-flight experience
+            through technological and service innovations:
           </p>
-        </div>
-
-        <div className="space-y-6">
-          <h2 className="text-3xl font-semibold">🌱 ESG & Sustainability</h2>
-          <p className="text-lg leading-relaxed">
-            United leads ESG with net-zero goals by 2050, SAF investments, eVTOL
-            aircraft development, and inclusive hiring programs. Transparency is
-            reflected in detailed ESG reporting.
-          </p>
-        </div>
-
-        <div className="space-y-6">
-          <h2 className="text-3xl font-semibold">✅ Why Choose United?</h2>
           <ul className="list-disc list-inside text-lg">
-            <li>Extensive global network</li>
-            <li>Fuel-efficient, modern fleet</li>
-            <li>Top loyalty program with elite benefits</li>
-            <li>Cutting-edge digital and sustainable travel solutions</li>
+            <li>
+              <strong>Polaris Business Class:</strong> A premium international
+              cabin featuring lie-flat seats, elevated dining, and luxurious
+              amenities
+            </li>
+            <li>
+              <strong>United Club & Polaris Lounges:</strong> Comfortable,
+              stylish airport lounges available at key hubs worldwide
+            </li>
+            <li>
+              <strong>Connectivity:</strong> Fast onboard Wi-Fi, live streaming
+              entertainment, and enhanced mobile app features support today’s
+              digital traveler
+            </li>
+            <li>
+              <strong>Mobile App:</strong> Industry-leading digital platform for
+              booking, managing trips, and real-time travel updates
+            </li>
           </ul>
+        </div>
+
+        <div className="space-y-6">
+          <h2 className="text-3xl font-semibold">
+            🌱 Sustainability and Environmental, Social, Governance (ESG)
+            Initiatives
+          </h2>
+          <p className="text-lg leading-relaxed">
+            United Airlines is deeply committed to sustainable aviation and
+            responsible corporate practices:
+          </p>
+          <ul className="list-disc list-inside text-lg">
+            <li>
+              First major U.S. airline to invest in electric vertical takeoff
+              and landing (eVTOL) aircraft projects
+            </li>
+            <li>
+              Strategic partnerships advancing the production and use of
+              Sustainable Aviation Fuel (SAF)
+            </li>
+            <li>
+              Transparent ESG reporting, setting ambitious carbon neutrality
+              targets with a goal to eliminate net greenhouse gas emissions by
+              2050
+            </li>
+            <li>
+              Programs to promote diversity, equity, and inclusion across all
+              levels of the organization
+            </li>
+          </ul>
+        </div>
+
+        <div className="space-y-6">
+          <h2 className="text-3xl font-semibold">
+            ✅ Why Choose United Airlines ❓
+          </h2>
+          <p>
+            United Airlines combines a rich heritage with a forward-looking
+            approach to global aviation. Whether you’re a business traveler
+            seeking efficiency, a leisure traveler craving comfort, or an
+            environmentally conscious flyer, United offers:
+          </p>
+          <ul className="list-disc list-inside text-lg">
+            <li>
+              A robust global network ensuring you reach your destination with
+              ease
+            </li>
+            <li>One of the newest and most fuel-efficient fleets in the sky</li>
+            <li>
+              Award-winning loyalty programs and top-tier customer service
+            </li>
+            <li>
+              Industry-leading investments in sustainability and innovation
+            </li>
+          </ul>
+          <p>
+            Travel confidently with United — connecting people, communities, and
+            cultures worldwide.
+          </p>
         </div>
       </main>
       <main className="bg-white text-gray-900 font-sans px-6 md:px-20 py-10 space-y-14 max-w-7xl mx-auto">
         <div className="space-y-6">
-          <h1 className="text-4xl md:text-6xl font-bold text-blue-900">
+          <h3 className="text-xl md:text-4xl font-bold text-blue-900">
             🌟 United Airlines – A Seamless Travel Experience
-          </h1>
+          </h3>
           <Image
             src="/placeholder-united.jpg"
             alt="United Airlines aircraft"
@@ -266,24 +448,33 @@ export default function Page() {
             className="rounded-2xl shadow-md w-full h-70"
           />
           <p className="text-lg leading-relaxed">
-            I recently had the pleasure of flying with United Airlines, and my
-            overall experience was highly satisfying. Here’s a detailed look at
-            what made the journey exceptional.
-          </p>
-        </div>
-
-        <div className="space-y-4">
-          <h2 className="text-3xl font-semibold">✈️ Extensive Route Network</h2>
-          <p className="text-lg leading-relaxed">
-            United’s extensive flight network spans the U.S., Asia, Europe, and
-            Latin America. As a key Star Alliance member, it ensures seamless
-            international transfers, lounge access, and coordinated schedules.
+            Recently had the pleasure of flying with United Airlines, and must
+            say, overall experience was highly satisfying. Below is an in-depth
+            look at the highlights that made journey enjoyable and comfortable:
           </p>
         </div>
 
         <div className="space-y-4">
           <h2 className="text-3xl font-semibold">
-            🛫 Modern Fleet & Cabin Comfort
+            ✈️ Extensive Route Network and Travel Flexibility
+          </h2>
+          <p className="text-lg leading-relaxed">
+            One of United Airlines’ standout features is its incredibly
+            wide-reaching flight network. Whether flying within the U.S. or
+            heading overseas to Asia, Europe, or Latin America, United offers an
+            extensive selection of direct and connecting flights through its
+            numerous hubs. This vast connectivity is further strengthened by its
+            prominent role in the Star Alliance, allowing passengers to easily
+            transfer across multiple airlines worldwide while enjoying shared
+            perks like lounge access and coordinated schedules. This
+            connectivity makes international and domestic travel straightforward
+            and hassle-free.
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-3xl font-semibold">
+            🛫 Modern Fleet Offering Exceptional Comfort
           </h2>
           <Image
             src="/placeholder-cabin.jpg"
@@ -292,43 +483,75 @@ export default function Page() {
             height={600}
             className="rounded-2xl shadow-md w-full h-70"
           />
+          <p>
+            United’s commitment to maintaining a modern and comfortable fleet
+            was evident throughout my trip. On my long-haul flight aboard a
+            Boeing 787 Dreamliner, the experience was impressive:
+          </p>
           <ul className="list-disc list-inside text-lg leading-relaxed">
-            <li>Ergonomic seats with ample legroom</li>
-            <li>Quiet cabins that reduce fatigue</li>
-            <li>Oversized windows with tint control</li>
-            <li>Advanced air filtration systems</li>
+            <li>
+              Ergonomically designed seats with generous legroom ensuring
+              relaxed seating
+            </li>
+            <li>
+              A notably quiet cabin environment that reduced travel fatigue
+            </li>
+            <li>
+              Oversized windows featuring adjustable tinting for natural light
+              control
+            </li>
+            <li>
+              Advanced air filtration and circulation systems enhancing overall
+              cabin comfort
+            </li>
             <li>
               Polaris business class: lie-flat seats, premium bedding, privacy
               features
             </li>
           </ul>
-        </div>
-
-        <div className="space-y-4">
-          <h2 className="text-3xl font-semibold">
-            👩‍✈️ Exceptional Crew Service
-          </h2>
-          <p className="text-lg leading-relaxed">
-            From check-in to landing, the staff was courteous and efficient.
-            Flight attendants were warm, attentive, and helpful, enhancing the
-            overall journey.
+          <p>
+            For business class travelers, United’s Polaris cabin takes luxury to
+            the next level. The lie-flat seats, premium bedding, and
+            thoughtfully designed privacy features truly transform long flights
+            into restful experiences, making it easier to arrive refreshed and
+            ready.
           </p>
         </div>
 
         <div className="space-y-4">
           <h2 className="text-3xl font-semibold">
-            🎁 MileagePlus Loyalty Program
+            👩‍✈️ Attentive and Professional Crew
           </h2>
           <p className="text-lg leading-relaxed">
-            United’s MileagePlus offers great value with easy mile-earning
-            options and elite tiers that bring benefits like lounge access,
-            upgrades, and priority boarding.
+            Throughout every stage of my journey, from check-in to landing, the
+            United Airlines staff demonstrated professionalism combined with
+            genuine friendliness. Gate agents were efficient and courteous,
+            helping ease the boarding process smoothly. Onboard, flight
+            attendants were attentive without being overbearing, skillfully
+            accommodating special requests and maintaining a warm atmosphere
+            that enhanced the overall travel experience.
           </p>
         </div>
 
         <div className="space-y-4">
           <h2 className="text-3xl font-semibold">
-            🎬 In-Flight Entertainment & Dining
+            🎁 Rewarding MileagePlus Loyalty Program
+          </h2>
+          <p className="text-lg leading-relaxed">
+            For frequent travelers, United’s MileagePlus program is a valuable
+            asset. Earning miles is straightforward both on flights and via an
+            extensive network of partner companies. The program’s elite tiers
+            offer meaningful benefits such as priority boarding, complimentary
+            upgrades, and access to exclusive lounges — perks that significantly
+            enhance travel comfort. Additionally, redeeming miles is flexible,
+            especially with access to Star Alliance flights worldwide, providing
+            excellent value for loyal customers.
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-3xl font-semibold">
+            🎬 Engaging In-Flight Entertainment and Connectivity
           </h2>
           <Image
             src="/placeholder-entertainment.jpg"
@@ -338,14 +561,21 @@ export default function Page() {
             className="rounded-2xl shadow-md w-full h-70"
           />
           <p className="text-lg leading-relaxed">
-            United provides a vast media library and high-speed Wi-Fi. Meal
-            options accommodate various dietary needs and exceed expectations,
-            especially on international flights.
+            United offers a diverse in-flight entertainment selection, featuring
+            an impressive library of movies, television shows, and interactive
+            games that cater to a wide range of tastes and age groups. The
+            availability of high-speed Wi-Fi on many routes allowed me to stay
+            productive and connected, whether working or chatting with friends
+            and family. International flight dining exceeded expectations, with
+            multiple meal choices accommodating various dietary needs and
+            preferences, making the meal service both enjoyable and inclusive.
           </p>
         </div>
 
         <div className="space-y-4">
-          <h2 className="text-3xl font-semibold">🧼 Cleanliness & Safety</h2>
+          <h2 className="text-3xl font-semibold">
+            🧼 Impressive Cleanliness and Commitment to Safety
+          </h2>
           <p className="text-lg leading-relaxed">
             Cabins were spotless, and safety measures were communicated and
             followed diligently, ensuring peace of mind throughout the flight.
@@ -355,36 +585,79 @@ export default function Page() {
         <div className="space-y-4">
           <h2 className="text-3xl font-semibold">📱 Intuitive Mobile App</h2>
           <p className="text-lg leading-relaxed">
-            The United app made booking, check-in, upgrades, and account
-            management effortless. Real-time updates minimized travel stress.
+            Particularly notable was United’s dedication to maintaining clean
+            and safe cabin environments — an essential factor in today’s travel
+            landscape. The aircraft interiors were spotless, and all safety
+            protocols were clearly communicated and diligently observed,
+            instilling confidence and peace of mind throughout the journey.
           </p>
         </div>
 
         <div className="space-y-4">
           <h2 className="text-3xl font-semibold">
-            🌱 Sustainability Initiatives
+            👥 User-Friendly Technology Enhancing the Travel Journey
           </h2>
           <p className="text-lg leading-relaxed">
-            United leads green aviation with Sustainable Aviation Fuel, electric
-            aircraft investments, and a strong commitment to lowering emissions.
+            The United mobile app played a key role in streamlining my travel
+            experience. Its intuitive interface made booking flights, checking
+            in, and tracking real-time updates easy and efficient. The app also
+            provided seamless management of MileagePlus accounts, including
+            booking upgrades and handling boarding passes digitally — all of
+            which added significant convenience and reduced stress.
           </p>
         </div>
 
         <div className="space-y-4">
-          <h2 className="text-3xl font-semibold">✨ Other Highlights</h2>
-          <ul className="list-disc list-inside text-lg leading-relaxed">
-            <li>Access to Polaris lounges</li>
-            <li>On-time performance</li>
-            <li>Inclusive support for travelers with special needs</li>
-          </ul>
+          <h2 className="text-3xl font-semibold">
+            🌱 Pioneering Sustainability and Environmental Responsibility
+          </h2>
+          <p className="text-lg leading-relaxed">
+            United Airlines stands out for its proactive approach to
+            environmental sustainability. Their investments in Sustainable
+            Aviation Fuel (SAF), support for electric and hydrogen-powered
+            aircraft development, and clear targets for reducing carbon
+            emissions show a genuine commitment to greener air travel. It’s
+            inspiring to see such a major carrier leading industry efforts to
+            protect the planet while maintaining exceptional service.
+          </p>
         </div>
 
         <div className="space-y-4">
-          <h2 className="text-3xl font-semibold">📝 Final Thoughts</h2>
+          <h2 className="text-3xl font-semibold">✨ Additional things</h2>
+          <ul className="list-disc list-inside text-lg leading-relaxed">
+            <li>
+              <strong>Polaris Lounges & Airport Services:</strong> Access to the
+              comfortable and well-appointed Polaris lounges at major hubs made
+              pre-flight wait times relaxing and productive.
+            </li>
+            <li>
+              <strong>On-Time Performance:</strong> My flights operated smoothly
+              with timely departures and arrivals, highlighting United’s
+              operational efficiency.
+            </li>
+            <li>
+              <strong>Special Assistance:</strong> United’s accommodation for
+              passengers with disabilities or special needs was handled with
+              care and professionalism, making the journey inclusive for all
+              travelers.
+            </li>
+          </ul>
+        </div>
+
+        <div className="space-y-4 bg-gray-50 p-6 rounded-xl shadow-lg">
+          <h2 className="text-3xl font-semibold mb-4 text-purple-700">📝 Final Verdict</h2>
           <p className="text-lg leading-relaxed">
-            United Airlines combines global connectivity, superior comfort,
-            smart technology, and sustainability — making it a top pick for
-            business and leisure travel.
+            United Airlines delivers a well-rounded travel experience that
+            balances extensive global reach with exceptional comfort, attentive
+            service, and modern technology. Whether you are a business traveler
+            seeking efficiency and productivity, or a leisure flyer looking for
+            convenience and comfort, United makes it easy to travel with
+            confidence. Their ongoing investments in sustainability and
+            innovation further elevate the airline as a forward-thinking leader
+            in aviation.
+            <br />
+            Highly recommend United Airlines for anyone planning a seamless and
+            enjoyable journey across the globe.
           </p>
         </div>
       </main>

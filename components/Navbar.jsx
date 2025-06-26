@@ -51,7 +51,7 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
-      <nav className="  bg-linear-65 bg-white to-gray-100 text-white px-4 py-3 shadow-xs sticky top-0 z-40">
+      <nav className="  bg-linear-65 bg-white to-gray-100 text-white px-4 py-1 shadow-xs sticky top-[53px] z-40">
         <div className="max-w-7xl mx-auto flex justify-center md:justify-center items-center ">
           {/* <Link
             href="/"

@@ -32,9 +32,9 @@ export default function Page() {
 
       <main className="bg-white text-gray-800 font-sans px-6 md:px-20 py-10 space-y-14 max-w-7xl mx-auto">
         {sections.map((section, idx) => (
-          <motion.section key={idx} {...fadeUp} className="space-y-4">
+          <div key={idx} {...fadeUp} className="space-y-4">
             {section}
-          </motion.section>
+          </div>
         ))}
         {/* {...sections} */}
       </main>
@@ -430,7 +430,12 @@ const sections = [
           📝 Final Verdict
         </h2>
         <p className="text-lg leading-relaxed">
-          Delta Air Lines offers a superior traveler experience by blending comfort, professional service, and operational strength. For both domestic and international routes, it consistently delivers a reliable and enjoyable journey. Travelers should remain mindful of the occasional lapse in emergency support and be aware that higher costs can accompany its premium offerings.
+          Delta Air Lines offers a superior traveler experience by blending
+          comfort, professional service, and operational strength. For both
+          domestic and international routes, it consistently delivers a reliable
+          and enjoyable journey. Travelers should remain mindful of the
+          occasional lapse in emergency support and be aware that higher costs
+          can accompany its premium offerings.
         </p>
       </section>
     </main>
