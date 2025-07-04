@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Page() {
   return (
-    <main className="bg-white text-gray-900 p-6 md:p-12 space-y-12">
+    <main className="bg-white text-gray-800 font-sans px-6 md:px-20 py-10 space-y-14 max-w-7xl mx-auto">
       {/* Hero Section */}
       <section className=" space-y-4">
         <h1 className="text-4xl md:text-6xl font-extrabold text-blue-700">🛫 JetBlue Airways</h1>
@@ -10,7 +10,7 @@ export default function Page() {
           JetBlue Airways Corporation is a leading American low-cost airline, renowned for redefining what budget travel looks like in the modern aviation world. Headquartered in the vibrant borough of Long Island City, Queens, New York, JetBlue blends affordability with comfort, delivering a customer-first experience that has earned it a loyal and growing base of travelers.
         </p>
         <div className="w-full h-64 md:h-[310px] relative mx-auto rounded-2xl overflow-hidden shadow">
-          <Image src="/assets/home/airline10.png" alt="JetBlue Airways" layout="fill" objectFit="cover"/>
+          <Image src="/assets/home/airline10.png" alt="JetBlue Airways" layout="fill" objectFit="cover" />
         </div>
       </section>
 
@@ -25,9 +25,9 @@ export default function Page() {
           <li><strong>Primary Hub:</strong> John F. Kennedy International Airport (JFK), New York City</li>
         </ul>
         <p className="mt-4 text-lg">
-         JetBlue was launched with a revolutionary idea — to offer low fares without compromising on quality or comfort. From day one, the airline set itself apart with pioneering features like complimentary seat-back entertainment, free snacks and drinks, leather seating, and more legroom than most other budget airlines.
-<br/> Today, JetBlue is widely seen as the gold standard in low-cost aviation.
- </p>
+          JetBlue was launched with a revolutionary idea — to offer low fares without compromising on quality or comfort. From day one, the airline set itself apart with pioneering features like complimentary seat-back entertainment, free snacks and drinks, leather seating, and more legroom than most other budget airlines.
+          <br /> Today, JetBlue is widely seen as the gold standard in low-cost aviation.
+        </p>
       </section>
 
       {/* Fleet Section */}
@@ -157,116 +157,116 @@ export default function Page() {
           <li>Friendly and professional crew</li>
         </ul>
       </section>
-   
-       <div>
-          <h1 className="text-4xl md:text-6xl font-bold text-sky-800">🌟 JetBlue Airways: A Standout in U.S. Aviation</h1>
-          <Image src="/placeholder-jetblue.jpg" alt="JetBlue Aircraft" width={1200} height={600} className="rounded-2xl shadow-md" />
-          <p className="text-lg leading-relaxed">
-            JetBlue blends affordability, comfort, and service into a modern airline experience. It proves low-cost doesn’t have to mean low-quality — especially in the domestic U.S. market.
-          </p>
-       </div>
 
-        {/** Booking & Check-in */}
-        <div>
-          <h2 className="text-3xl font-semibold">✈️ Booking & Check-In: Seamless & Stress-Free</h2>
-          <p className="text-lg leading-relaxed">
-            JetBlue’s mobile-first booking experience is fast and intuitive. Easily compare fare classes, add bags or upgrades, and receive real-time alerts — all with a frustration-free interface.
-          </p>
-       </div>
+      <div>
+        <h1 className="text-4xl md:text-6xl font-bold text-sky-800">🌟 JetBlue Airways: A Standout in U.S. Aviation</h1>
+        <Image src="/placeholder-jetblue.jpg" alt="JetBlue Aircraft" width={1200} height={600} className="rounded-2xl shadow-md" />
+        <p className="text-lg leading-relaxed">
+          JetBlue blends affordability, comfort, and service into a modern airline experience. It proves low-cost doesn’t have to mean low-quality — especially in the domestic U.S. market.
+        </p>
+      </div>
 
-        {/** Baggage Policies */}
-        <div>
-          <h2 className="text-3xl font-semibold">🧳 Baggage Policies: Fair & Predictable</h2>
-          <p className="text-lg leading-relaxed">
-            JetBlue offers a carry-on and personal item for most fares. Checked bag fees are clear, with bundled options that save money and avoid surprises. Handling is reliable and support is responsive.
-          </p>
-       </div>
+      {/** Booking & Check-in */}
+      <div>
+        <h2 className="text-3xl font-semibold">✈️ Booking & Check-In: Seamless & Stress-Free</h2>
+        <p className="text-lg leading-relaxed">
+          JetBlue’s mobile-first booking experience is fast and intuitive. Easily compare fare classes, add bags or upgrades, and receive real-time alerts — all with a frustration-free interface.
+        </p>
+      </div>
 
-        {/** Cabin Comfort */}
-        <div>
-          <h2 className="text-3xl font-semibold">🛫 Cabin Comfort: Roomy & Refined</h2>
-          <Image src="/placeholder-cabin.jpg" alt="JetBlue Cabin" width={1200} height={600} className="rounded-2xl shadow-md" />
-          <ul className="list-disc list-inside text-lg leading-relaxed">
-            <li>Ample legroom in all economy seats</li>
-            <li>Leather seats with adjustable headrests</li>
-            <li>USB/power outlets standard</li>
-            <li>Even More Space upgrade offers early boarding & extra pitch</li>
-          </ul>
-       </div>
+      {/** Baggage Policies */}
+      <div>
+        <h2 className="text-3xl font-semibold">🧳 Baggage Policies: Fair & Predictable</h2>
+        <p className="text-lg leading-relaxed">
+          JetBlue offers a carry-on and personal item for most fares. Checked bag fees are clear, with bundled options that save money and avoid surprises. Handling is reliable and support is responsive.
+        </p>
+      </div>
 
-        {/** Entertainment */}
-        <div>
-          <h2 className="text-3xl font-semibold">📡 Entertainment & Wi-Fi: Best in Class</h2>
-          <p className="text-lg leading-relaxed">
-            Free Fly-Fi internet, live TV, seatback screens, and movies make JetBlue’s entertainment offering better than many full-service carriers.
-          </p>
-       </div>
+      {/** Cabin Comfort */}
+      <div>
+        <h2 className="text-3xl font-semibold">🛫 Cabin Comfort: Roomy & Refined</h2>
+        <Image src="/placeholder-cabin.jpg" alt="JetBlue Cabin" width={1200} height={600} className="rounded-2xl shadow-md" />
+        <ul className="list-disc list-inside text-lg leading-relaxed">
+          <li>Ample legroom in all economy seats</li>
+          <li>Leather seats with adjustable headrests</li>
+          <li>USB/power outlets standard</li>
+          <li>Even More Space upgrade offers early boarding & extra pitch</li>
+        </ul>
+      </div>
 
-        {/** Food & Drink */}
-        <div>
-          <h2 className="text-3xl font-semibold">🍴 Food & Beverage: Simple, Satisfying</h2>
-          <p className="text-lg leading-relaxed">
-            Enjoy complimentary snacks (blue chips are a favorite), soft drinks, and upgradeable snack boxes. Mint passengers enjoy restaurant-inspired cuisine and curated wines.
-          </p>
-       </div>
+      {/** Entertainment */}
+      <div>
+        <h2 className="text-3xl font-semibold">📡 Entertainment & Wi-Fi: Best in Class</h2>
+        <p className="text-lg leading-relaxed">
+          Free Fly-Fi internet, live TV, seatback screens, and movies make JetBlue’s entertainment offering better than many full-service carriers.
+        </p>
+      </div>
 
-        {/** Crew */}
-        <div>
-          <h2 className="text-3xl font-semibold">👨✈️ Cabin Crew: Caring & Genuine</h2>
-          <p className="text-lg leading-relaxed">
-            JetBlue’s staff is consistently friendly and accommodating — especially helpful to families and nervous flyers. The human-centered service is a major differentiator.
-          </p>
-       </div>
+      {/** Food & Drink */}
+      <div>
+        <h2 className="text-3xl font-semibold">🍴 Food & Beverage: Simple, Satisfying</h2>
+        <p className="text-lg leading-relaxed">
+          Enjoy complimentary snacks (blue chips are a favorite), soft drinks, and upgradeable snack boxes. Mint passengers enjoy restaurant-inspired cuisine and curated wines.
+        </p>
+      </div>
 
-        {/** Mint Class */}
-        <div>
-          <h2 className="text-3xl font-semibold">🛋️ Mint Class: Boutique Luxury</h2>
-          <Image src="/placeholder-mint.jpg" alt="Mint Class" width={1200} height={600} className="rounded-2xl shadow-md" />
-          <ul className="list-disc list-inside text-lg leading-relaxed">
-            <li>Lie-flat suites with privacy doors</li>
-            <li>Priority services and exclusive amenity kits</li>
-            <li>Curated menus with fine dining flair</li>
-          </ul>
-       </div>
+      {/** Crew */}
+      <div>
+        <h2 className="text-3xl font-semibold">👨✈️ Cabin Crew: Caring & Genuine</h2>
+        <p className="text-lg leading-relaxed">
+          JetBlue’s staff is consistently friendly and accommodating — especially helpful to families and nervous flyers. The human-centered service is a major differentiator.
+        </p>
+      </div>
 
-        {/** Network & Reliability */}
-        <div>
-          <h2 className="text-3xl font-semibold">🌐 Flight Network & Reliability</h2>
-          <p className="text-lg leading-relaxed">
-            Serving the U.S., Latin America, and Europe from major hubs like JFK, BOS, and LAX. Flights are generally punctual with strong mobile app communication.
-          </p>
-       </div>
+      {/** Mint Class */}
+      <div>
+        <h2 className="text-3xl font-semibold">🛋️ Mint Class: Boutique Luxury</h2>
+        <Image src="/placeholder-mint.jpg" alt="Mint Class" width={1200} height={600} className="rounded-2xl shadow-md" />
+        <ul className="list-disc list-inside text-lg leading-relaxed">
+          <li>Lie-flat suites with privacy doors</li>
+          <li>Priority services and exclusive amenity kits</li>
+          <li>Curated menus with fine dining flair</li>
+        </ul>
+      </div>
 
-        {/** Sustainability */}
-        <div>
-          <h2 className="text-3xl font-semibold">🌱 Sustainability Leadership</h2>
-          <p className="text-lg leading-relaxed">
-            JetBlue was first in the U.S. to offset 100% of carbon emissions on domestic flights. It invests in SAF and aims for net-zero emissions by 2040.
-          </p>
-       </div>
+      {/** Network & Reliability */}
+      <div>
+        <h2 className="text-3xl font-semibold">🌐 Flight Network & Reliability</h2>
+        <p className="text-lg leading-relaxed">
+          Serving the U.S., Latin America, and Europe from major hubs like JFK, BOS, and LAX. Flights are generally punctual with strong mobile app communication.
+        </p>
+      </div>
 
-        {/** Passenger Quotes */}
-        <div>
-          <h2 className="text-3xl font-semibold">💬 What Passengers Are Saying</h2>
-          <blockquote className="border-l-4 border-sky-500 pl-4 italic text-lg text-gray-700">
-            “It’s hard to fly with anyone else after experiencing JetBlue’s legroom and free Wi-Fi.” — Business Traveler, NYC
-          </blockquote>
-          <blockquote className="border-l-4 border-sky-500 pl-4 italic text-lg text-gray-700">
-            “Mint Class feels like a boutique hotel in the sky. Exceptional for the price.” — Frequent Flyer, California
-          </blockquote>
-          <blockquote className="border-l-4 border-sky-500 pl-4 italic text-lg text-gray-700">
-            “The crew was cheerful, patient, and genuinely kind — especially with my kids.” — Family Traveler, Florida
-          </blockquote>
-       </div>
+      {/** Sustainability */}
+      <div>
+        <h2 className="text-3xl font-semibold">🌱 Sustainability Leadership</h2>
+        <p className="text-lg leading-relaxed">
+          JetBlue was first in the U.S. to offset 100% of carbon emissions on domestic flights. It invests in SAF and aims for net-zero emissions by 2040.
+        </p>
+      </div>
 
-        {/** Final Verdict */}
-        <div>
-          <h2 className="text-3xl font-semibold">🛬 Final Verdict: A Hybrid Airline That Works</h2>
-          <p className="text-lg leading-relaxed">
-            JetBlue fuses the value of low-cost travel with premium amenities. Whether on a quick hop or a transatlantic trip, it delivers consistent quality and hospitality.
-          </p>
-       </div>
-      </main>
-      
+      {/** Passenger Quotes */}
+      <div>
+        <h2 className="text-3xl font-semibold">💬 What Passengers Are Saying</h2>
+        <blockquote className="border-l-4 border-sky-500 pl-4 italic text-lg text-gray-700">
+          “It’s hard to fly with anyone else after experiencing JetBlue’s legroom and free Wi-Fi.” — Business Traveler, NYC
+        </blockquote>
+        <blockquote className="border-l-4 border-sky-500 pl-4 italic text-lg text-gray-700">
+          “Mint Class feels like a boutique hotel in the sky. Exceptional for the price.” — Frequent Flyer, California
+        </blockquote>
+        <blockquote className="border-l-4 border-sky-500 pl-4 italic text-lg text-gray-700">
+          “The crew was cheerful, patient, and genuinely kind — especially with my kids.” — Family Traveler, Florida
+        </blockquote>
+      </div>
+
+      {/** Final Verdict */}
+      <div>
+        <h2 className="text-3xl font-semibold">🛬 Final Verdict: A Hybrid Airline That Works</h2>
+        <p className="text-lg leading-relaxed">
+          JetBlue fuses the value of low-cost travel with premium amenities. Whether on a quick hop or a transatlantic trip, it delivers consistent quality and hospitality.
+        </p>
+      </div>
+    </main>
+
   );
 }

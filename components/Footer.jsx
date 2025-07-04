@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="bg-[#400950] text-white px-6 py-12">
@@ -48,15 +50,14 @@ export default function Footer() {
 
         {/* Products and services */}
         <div>
-          <h3 className="font-bold mb-2">Products and services</h3>
+          <h3 className="font-bold mb-2">Services</h3>
           <ul className="space-y-1">
-            <HoverGradient>Optional services and fees</HoverGradient>
-            <HoverGradient>Corporate travel</HoverGradient>
-            <HoverGradient>EasyBiz</HoverGradient>
-            <HoverGradient>Travel agents</HoverGradient>
-            <HoverGradient>Cargo <sup>↗</sup></HoverGradient>
-            <HoverGradient>Gift certificates</HoverGradient>
-            <HoverGradient>Travel insurance</HoverGradient>
+            <HoverGradient href={"/expedia"}>Expedia</HoverGradient>
+            <HoverGradient href={"/bookingAboutPage"}>Booking</HoverGradient>
+            <HoverGradient href={"/kiwi"}>Kiwi</HoverGradient>
+            <HoverGradient href={"/gotogate"}>Gotogate</HoverGradient>
+            {/* <HoverGradient>Easyflight<sup>↗</sup></HoverGradient>
+            <HoverGradient>Mytrip</HoverGradient> */}
           </ul>
         </div>
 
@@ -104,9 +105,9 @@ export default function Footer() {
   );
 }
 
-function HoverGradient({children }) {
+function HoverGradient({children ,href}) {
   return (
-    <li className="hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-bl hover:from-violet-500 hover:to-fuchsia-500 hover:font-semibold cursor-pointer">{children}</li>
+    <li><Link href={href || ""} className="hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-bl hover:from-violet-500 hover:to-fuchsia-500 hover:font-semibold cursor-pointer">{children}</Link></li>
 
   );
 }

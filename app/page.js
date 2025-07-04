@@ -5,14 +5,14 @@ import CallQRCode from "@/components/qrcode/CallQrCode";
 import Image from "next/image";
 
 const Home = () => (
-  <div className="bg-slate-100">
+  <div className="bg-[#F0F2F3]">
     {/* <SEO/> */}
     <div className="flex flex-wrap justify-between gap-5 pt-16">
-      <div className="mx-auto w-[300px] md:w-[600px] md:mt-16">
-        <h3 className="font-bold text-3xl font-sans text-slate-700">
+      <div className="mx-auto w-[300px] md:w-[600px] md:mt-12">
+        <h3 className="font-bold text-3xl font-sans text-transparent bg-clip-text bg-gradient-to-bl from-violet-500 to-fuchsia-500 shadow-drop">
           Effortless Flight Services – Accurate Assistance with Every Call
         </h3>
-        <p className="mt-3 text-sm md:text-base text-slate-600">
+        <p className="mt-3 text-sm md:text-lg text-slate-600">
           Our website offers personalized support with every service call,
           ensuring a smooth, hassle-free experience. By minimizing errors and
           simplifying tasks, we make sure your flight services are faster and
