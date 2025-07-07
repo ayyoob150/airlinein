@@ -1,9 +1,28 @@
 const ContactSection = () => (
-    <section id="contact" className="py-16 bg-slate-600 text-white">
-      <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-3xl font-semibold mb-6">Contact Us</h2>
-        <p className="text-lg mb-6">Have any questions? Get in touch with us.</p>
-        <a href="mailto:contact@AirlineIn.com" className="bg-yellow-500 py-2 px-6 rounded-full hover:bg-yellow-400 text-black">Email Us</a>
+    <section id="contact" className="py-16 bg-pink-50 p-8 ">
+      <div className="shadow-md rounded-lg  p-6  md:pb-26 bg-white mx-3 md:mx-8">
+      <h1 className="mt-4 text-center text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-bl from-violet-500 to-fuchsia-500">Get in Touch, Talk to our Team</h1>
+       <div className=" flex gap-8 justify-around flex-wrap mt-12">
+         <div className="p-5 shadow-md rounded-lg  z-10 bg-white border border-slate-100 w-[181px] ">
+          <div className='text-2xl text-center font-semibold text-slate-700'>3.8<span className="text-orange-600">+</span> million</div>
+          <div className="text-sm text-center mt-1 text-slate-500">people trust</div>
+        </div>
+        <div className="p-5 shadow-md rounded-lg z-10 bg-white border border-slate-100 w-[181px]">
+          <div className='text-2xl text-center font-semibold text-slate-700'>120<span className="text-orange-600">+</span> million</div>
+          <div className="text-sm text-center mt-1 text-slate-500">problem solved</div>
+        </div>
+        <div className="p-5 shadow-md rounded-lg z-10 bg-white border border-slate-100 w-[181px]">
+          <div className='text-2xl text-center font-semibold text-slate-700'>8<span className="text-orange-600">+</span> year</div>
+          <div className="text-sm text-center mt-1 text-slate-500">in service</div>
+        </div>
+        <div className="p-5 shadow-md rounded-lg z-10 bg-white border border-slate-100 w-[181px]">
+          <div className='text-2xl text-center font-semibold text-slate-700'>190,300<span className="text-orange-600">+</span></div>
+          <div className="text-sm text-center mt-1 text-slate-500">got review 5+ star</div>
+        </div>
+      <div className="absolute w-[91%] rounded h-20 bg-gradient-to-bl from-pink-500 to-fuchsia-500 mt-20 hidden md:block "></div>
+
+       </div>
+
       </div>
     </section>
   );

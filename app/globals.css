@@ -23,7 +23,7 @@
 }
 
 body {
-  background: rgb(248, 245, 255);
+  background: #F0F2F3;
   color: var(--foreground);
   font-family: 'Montserrat', sans-serif;
 }
