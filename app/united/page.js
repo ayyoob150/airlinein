@@ -19,7 +19,7 @@ export default function Page() {
         <meta property="og:type" content="website" />
       </Head>
 
-      <main className="bg-white text-gray-900 font-sans px-6 md:px-20 py-10 space-y-14 max-w-7xl mx-auto">
+      <main className="bg-white text-gray-900  px-6 md:px-20 py-10 space-y-14 max-w-7xl mx-auto">
         <div className="space-y-6">
           <h1 className="text-3xl md:text-5xl font-bold text-blue-900">
             ✈️ United Airlines – Company Profile
@@ -435,7 +435,7 @@ export default function Page() {
           </p>
         </div>
       </main>
-      <main className="bg-white text-gray-900 font-sans px-6 md:px-20 py-10 space-y-14 max-w-7xl mx-auto">
+      <main className="bg-white text-gray-900  px-6 md:px-20 py-10 space-y-14 max-w-7xl mx-auto">
         <div className="space-y-6">
           <h3 className="text-xl md:text-4xl font-bold text-blue-900">
             🌟 United Airlines – A Seamless Travel Experience

@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 export default function SpiritAirlinesPage() {
   return (
-    <main className="bg-white text-gray-800 font-sans px-6 md:px-20 py-10 space-y-16 max-w-7xl mx-auto">
+    <main className="bg-white text-gray-800  px-6 md:px-20 py-10 space-y-16 max-w-7xl mx-auto">
       <Head>
         <title>Spirit Airlines Overview</title>
         <meta name="description" content="Spirit Airlines company overview, network, business model, and future outlook." />

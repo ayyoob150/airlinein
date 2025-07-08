@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Page() {
   return (
-    <main className="bg-white text-gray-800 font-sans px-6 md:px-20 py-10 space-y-14 max-w-7xl mx-auto">
+    <main className="bg-white text-gray-800  px-6 md:px-20 py-10 space-y-14 max-w-7xl mx-auto">
       <section className="space-y-4">
         <h1 className="text-4xl font-bold">About Kiwi.com</h1>
         <p>Founded in 2012 in Brno, Czech Republic, Kiwi.com—originally launched as SkyPicker.com by entrepreneurs Oliver Dlouhy and Jozef Képesi—has evolved into one of Europe's largest and most innovative travel platforms. In 2016, the company rebranded to Kiwi.com after acquiring the premium domain name for $800,000, signaling a bold step toward global recognition.</p>

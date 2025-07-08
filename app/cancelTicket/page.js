@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function Page() {
   return (
     <div className="">
-      <div className=" min-h-screen my-10 px-4 sm:px-8 max-w-[80%] mx-auto bg-white rounded-2xl shadow-lg p-6 sm:p-10">
+      <div className=" min-h-screen my-10 px-4 sm:px-8 max-w-[94%] mx-auto bg-white rounded-2xl shadow p-6 sm:p-10">
         <div className="mb-10">
           <Image
             src="/assets/home/airline3.png"
@@ -14,7 +14,7 @@ export default function Page() {
           />
         </div>
 
-        <div className="text-4xl font-extralight text-gray-700 mb-10 text-center">Flight Ticket Policies & Guidelines</div>
+        <div className="text-4xl text-gray-700 mb-10 text-center">Flight Ticket Policies & Guidelines</div>
 
         <div className="space-y-10 text-lg text-gray-800">
           <PolicySection title="Refund Timeline">
@@ -90,7 +90,7 @@ export default function Page() {
 function PolicySection({ title, children }) {
   return (
     <section>
-      <div className="text-xl font-extralight text-gray-900 mb-3 underline">{title}</div>
+      <div className="text-xl font-semibold text-sky-800 mb-3">{title}</div>
       <div className="text-gray-600 text-xl  leading-relaxed space-y-2 mb-8">{children}</div>
     </section>
   );

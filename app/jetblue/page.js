@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Page() {
   return (
-    <main className="bg-white text-gray-800 font-sans px-6 md:px-20 py-10 space-y-14 max-w-7xl mx-auto">
+    <main className="bg-white text-gray-800  px-6 md:px-20 py-10 space-y-14 max-w-7xl mx-auto">
       {/* Hero Section */}
       <section className=" space-y-4">
         <h1 className="text-4xl md:text-6xl font-extrabold text-blue-700">🛫 JetBlue Airways</h1>

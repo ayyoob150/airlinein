@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Page() {
     return (
-        <div className="bg-white text-gray-800 font-sans px-6 md:px-20 py-10 space-y-14 max-w-7xl mx-auto">
+        <div className="bg-white text-gray-800  px-6 md:px-20 py-10 space-y-14 max-w-7xl mx-auto">
             <h1 className="text-4xl font-bold text-center">GoToGate: Review, Ownership, Services & What You Should Know Before Booking</h1>
 
             <section>

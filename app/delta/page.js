@@ -30,7 +30,7 @@ export default function Page() {
         <meta property="og:type" content="website" />
       </Head>
 
-      <main className="bg-white text-gray-800 font-sans px-6 md:px-20 py-10 space-y-14 max-w-7xl mx-auto">
+      <main className="bg-white text-gray-800  px-6 md:px-20 py-10 space-y-14 max-w-7xl mx-auto">
         {sections.map((section, idx) => (
           <div key={idx} {...fadeUp} className="space-y-4">
             {section}
