@@ -24,22 +24,22 @@ const Home = () => (
           <div className="w-[200px] md:w-[400px] h-[150px] rounded-full bg-fuchsia-50 opacity-60 blur-2xl absolute" />
           <div className="w-[200px] md:w-[300px] h-[200px] rounded-full bg-fuchsia-100 opacity-80 blur-xl absolute" />
         </div>
-        <div className="text">
+        <div className="">
           <div className="mt-8 font-bold text-lg  text-slate-700">
             Customer Service
           </div>
           <div className="mt-3">
             <a
               href="tel:+12152688872"
-              className=" font-semibold text-4xl  text-primary/90"
+              className=" font-semibold text-2xl md:text-4xl  text-primary/90"
             >
-              +1 (215) 268-8872
+             📞 +1 (215) 268-8872
             </a>
           </div>
-          <div className="">
+          <div className="flex ">
             <a
               href="tel:+12152688872"
-              className="px-6 py-3 text-slate-100 bg-primary rounded-md mt-4 w-28 font-bold flex justify-center items-center"
+              className="px-3 md:px-6 py-3 text-slate-100 bg-primary rounded-md mt-4 w-24 md:w-28 font-bold flex justify-center items-center"
             >
               Call us
             </a>
