@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Head from "next/head";
+import ContactSection from "@/components/ContactSection";
 
 export default function Page() {
   const fadeUp = {
@@ -29,6 +30,7 @@ export default function Page() {
         <meta property="og:image" content="/delta-og-image.jpg" />
         <meta property="og:type" content="website" />
       </Head>
+        <ContactSection name="Delta"/>
 
       <main className="bg-white text-gray-800  px-6 md:px-20 py-10 space-y-14 max-w-7xl mx-auto">
         {sections.map((section, idx) => (
