@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import Head from "next/head";
 import ContactSection from "@/components/ContactSection";
 
@@ -30,16 +29,24 @@ export default function Page() {
         <meta property="og:image" content="/delta-og-image.jpg" />
         <meta property="og:type" content="website" />
       </Head>
-        <ContactSection name="Delta"/>
 
-      <main className="bg-white text-gray-800  px-6 md:px-20 py-10 space-y-14 max-w-7xl mx-auto">
+      
+
+      <div className="flex gap-0 justify-center">
+        <div className="bg-white text-gray-800  px-6 md:px-20 py-10 space-y-14 max-w-7xl">
         {sections.map((section, idx) => (
           <div key={idx} {...fadeUp} className="space-y-4">
             {section}
           </div>
         ))}
         {/* {...sections} */}
-      </main>
+      </div>
+      <div>
+        <ContactSection name="Delta" isSide={true}/>
+
+      </div>
+      </div>
+
     </>
   );
 }
@@ -47,7 +54,7 @@ export default function Page() {
 const sections = [
   <>
     <div className="flex justify-start gap-6 items-center">
-      <h1 className="text-4xl md:text-6xl font-bold text-blue-700">
+      <h1 className="text-xl md:text-3xl font-bold text-blue-900">
         ✈️ Delta Air Lines
       </h1>
       <Image
@@ -70,7 +77,7 @@ const sections = [
     </p>
   </>,
   <>
-    <h2 className="text-3xl font-semibold">🌍 Fleet Overview & Global Reach</h2>
+    <h2 className="text-2xl font-semibold">🌍 Fleet Overview & Global Reach</h2>
     <Image
       src="https://image.cnbcfm.com/api/v1/image/107370758-1707399313990-gettyimages-1986207874-AFP_34HW3M3.jpeg?v=1726158829&w=1920&h=1080"
       alt="Fleet Overview"
@@ -91,7 +98,7 @@ const sections = [
     </p>
   </>,
   <>
-    <h2 className="text-3xl font-semibold">
+    <h2 className="text-2xl font-semibold">
       🎨 Branding & Aircraft Livery Evolution
     </h2>
     <Image
@@ -125,7 +132,7 @@ const sections = [
     </ul>
   </>,
   <>
-    <h2 className="text-3xl font-semibold">🧭 Services & Global Alliances</h2>
+    <h2 className="text-2xl font-semibold">🧭 Services & Global Alliances</h2>
     <Image
       src="https://image.cnbcfm.com/api/v1/image/107370758-1707399313990-gettyimages-1986207874-AFP_34HW3M3.jpeg?v=1726158829&w=1920&h=1080"
       alt="Fleet Overview"
@@ -148,7 +155,7 @@ const sections = [
     </p>
   </>,
   <>
-    <h2 className="text-3xl font-semibold">💰 Financial Performance</h2>
+    <h2 className="text-2xl font-semibold">💰 Financial Performance</h2>
     <Image
       src="https://image.cnbcfm.com/api/v1/image/107370758-1707399313990-gettyimages-1986207874-AFP_34HW3M3.jpeg?v=1726158829&w=1920&h=1080"
       alt="Fleet Overview"
@@ -177,7 +184,7 @@ const sections = [
     </p>
   </>,
   <>
-    <h2 className="text-3xl font-semibold">⚠️ Challenges</h2>
+    <h2 className="text-2xl font-semibold">⚠️ Challenges</h2>
     <p className="text-lg leading-relaxed">
       In July 2024, Delta faced a major disruption due to a global IT outage
       linked to CrowdStrike software, which grounded approximately 7,000 flights
@@ -192,7 +199,7 @@ const sections = [
     </p>
   </>,
   <>
-    <h2 className="text-3xl font-semibold">🏅 Recognition & Awards</h2>
+    <h2 className="text-2xl font-semibold">🏅 Recognition & Awards</h2>
     <p>
       Delta has consistently earned top honors for its reliability, service, and
       innovation. It was ranked the #1 U.S. airline by The Points Guy (TPG) for
@@ -212,7 +219,7 @@ const sections = [
     </ul>
   </>,
   <>
-    <h2 className="text-3xl font-semibold">✈️ Recent Developments</h2>
+    <h2 className="text-2xl font-semibold">✈️ Recent Developments</h2>
     <ul className="list-disc list-inside text-lg leading-relaxed">
       <li>
         Signed a codeshare and joint venture with Riyadh Air, enhancing
@@ -232,7 +239,7 @@ const sections = [
     </ul>
   </>,
   <>
-    <h2 className="text-3xl font-semibold">✅ Delta At A Glance</h2>
+    <h2 className="text-2xl font-semibold">✅ Delta At A Glance</h2>
     <p className="text-lg leading-relaxed">
       Delta Air Lines is a global leader in air travel, known for operational
       excellence, premium service, and industry innovation. With a century of
@@ -264,7 +271,7 @@ const sections = [
         </div>
       </section>
       <>
-        <h2 className="text-3xl font-semibold">
+        <h2 className="text-2xl font-semibold">
           👍 Strengths & 👎 Areas of Improvement
         </h2>
         <div className="text-lg leading-relaxed">
@@ -287,7 +294,7 @@ const sections = [
       </>
       ,
       <>
-        <h2 className="text-3xl font-semibold">
+        <h2 className="text-2xl font-semibold">
           🧳 Travel Experience & Final Verdict
         </h2>
         <p className="text-lg leading-relaxed">
@@ -298,7 +305,7 @@ const sections = [
       </>
       ,{/* Reputation & Accolades */}
       <section>
-        <h2 className="text-3xl font-semibold mb-4 text-blue-700">
+        <h2 className="text-2xl font-semibold mb-4 text-blue-700">
           ⭐ Reputation & Accolades
         </h2>
         <ul className="list-disc pl-6 space-y-2 text-lg">
@@ -321,7 +328,7 @@ const sections = [
       </section>
       {/* Strengths */}
       <section>
-        <h2 className="text-3xl font-semibold mb-4 text-green-700">
+        <h2 className="text-2xl font-semibold mb-4 text-green-700">
           👍 Strengths
         </h2>
         <div className="space-y-6">
@@ -373,7 +380,7 @@ const sections = [
       </section>
       {/* Areas That Could Improve */}
       {/* <section>
-        <h2 className="text-3xl font-semibold mb-4 text-red-700">
+        <h2 className="text-2xl font-semibold mb-4 text-red-700">
           👎 Areas That Could Improve
         </h2>
         <div className="space-y-4">
@@ -401,7 +408,7 @@ const sections = [
       </section> */}
       {/* Overall Travel Experience */}
       <section>
-        <h2 className="text-3xl font-semibold mb-4 text-indigo-700">
+        <h2 className="text-2xl font-semibold mb-4 text-indigo-700">
           🧳 Overall Travel Experience
         </h2>
         <ul className="list-disc pl-6 space-y-2 text-lg">
@@ -428,7 +435,7 @@ const sections = [
       </section>
       {/* Final Verdict */}
       <section className="bg-gray-50 p-6 rounded-xl shadow-lg">
-        <h2 className="text-3xl font-semibold mb-4 text-purple-700">
+        <h2 className="text-2xl font-semibold mb-4 text-purple-700">
           📝 Final Verdict
         </h2>
         <p className="text-lg leading-relaxed">
