@@ -1,7 +1,7 @@
 import { CalendarDaysIcon, ClockIcon, ComputerDesktopIcon, CurrencyDollarIcon, GlobeAltIcon, PhoneIcon, ShoppingBagIcon, TicketIcon, UserGroupIcon, XCircleIcon } from '@heroicons/react/24/outline'
 // ${isSide?"":""}
 const ContactSection = ({ name, isSide }) => (
-  <div className={`${isSide ? "pb-10 pt-3 p-1 mx-1  bg-white  rounded shadow max-w-[320px]" : "pb-16 pt-5 p-8 "}`}>
+  <div className={`${isSide ? "pb-4 pt-3 p-1 mx-1 bg-gradient-to-bl from-violet-50 to-fuchsia-50   md:max-w-[320px]" : "pb-16 pt-5 p-8 "}`}>
     {!isSide &&
       <div className={`${isSide ? "mb-2 mt-1  text-xl" : "mt-2 mb-8 text-3xl"}  text-center   font-bold text-transparent bg-clip-text bg-gradient-to-bl from-violet-500 to-fuchsia-500`}>Get in Touch, Talk to our Team</div>
     }
@@ -19,17 +19,7 @@ const ContactSection = ({ name, isSide }) => (
       </div>
       <div className={`${isSide?"text-base ":"text-base"} mt-2  text-slate-700`}>Executive are waiting to hear your concern. Don't wait just dial the number. We provide all services on call.</div>
 
-      <div className={`px-6 py-4 my-4 rounded-2xl bg-gradient-to-l from-pink-800 to-fuchsia-900`}>
-        <h2 className={`text-[22px] font-semibold text-gray-50 mb-4`}>Customer Support</h2>
-        <p className={`text-gray-100 text-lg mb-3 `}>
-          We are happy to assist you with everything!
-        </p>
-        <p className={`text-gray-300 text-base`}>
-          Let us know how we can help you. Our team works 24x7 to guide and help you with any queries or changes in your travel plan.
-          <br />
-          <span className={`font-medium`}>Here are ways how you can reach us:</span>
-        </p>
-      </div>
+      
 
 
       <div className={`flex justify-between flex-wrap gap-3 mt-3`}>
@@ -59,9 +49,19 @@ const ContactSection = ({ name, isSide }) => (
       </div>
 
     </div>
+<div className={`px-6 py-4 my-4 rounded-2xl bg-gradient-to-l from-pink-800 to-fuchsia-900`}>
+        <h2 className={`text-[22px] font-semibold text-gray-50 mb-4`}>Customer Support</h2>
+        <p className={`text-gray-100 text-lg mb-3 `}>
+          We are happy to assist you with everything!
+        </p>
+        <p className={`text-gray-300 text-base`}>
+          Let us know how we can help you. Our team works 24x7 to guide and help you with any queries or changes in your travel plan.
+          <br />
+          <span className={`font-medium`}>Here are ways how you can reach us:</span>
+        </p>
+      </div>
 
-
-    <div className={`relative shadow-lg rounded-lg  p-6  md:pb-26 bg-white mx-3 md:mx-8 `}>
+    <div className={`${isSide?"mx-3 md:mx-0":"mx-3 md:mx-8"} relative shadow-lg rounded-lg  p-6  md:pb-26 bg-white  `}>
       <div className={`text-fuchsia-600 text-sm font-bold text-center my-4`}>EXPERTISE IN ALL FLIGHT PASSENGER SERVICES</div>
       <div className={` flex gap-8 justify-around flex-wrap mt-12`}>
         <div className={`p-5 shadow-lg rounded-lg  z-10 bg-white border border-slate-100 w-[190px] `}>
@@ -73,7 +73,7 @@ const ContactSection = ({ name, isSide }) => (
           <div className={`text-sm text-center mt-1 text-slate-500`}>problem solved</div>
         </div>
         <div className={`p-5 shadow-lg rounded-lg z-10 bg-white border border-slate-100 w-[190px]`}>
-          <div className={`text-2xl text-center font-semibold text-slate-700'`}>8<span className={`text-orange-600`}>+</span> year</div>
+          <div className={`text-2xl text-center font-semibold text-slate-700`}>8<span className={`text-orange-600`}>+</span> year</div>
           <div className={`text-sm text-center mt-1 text-slate-500`}>in service</div>
         </div>
         <div className={`p-5 shadow-lg rounded-lg z-10 bg-white border border-slate-100 w-[190px]`}>

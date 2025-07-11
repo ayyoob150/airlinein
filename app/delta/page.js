@@ -32,8 +32,8 @@ export default function Page() {
 
       
 
-      <div className="flex gap-0 justify-center">
-        <div className="bg-white text-gray-800  px-6 md:px-20 py-10 space-y-14 max-w-7xl">
+      <div className="flex gap-0 justify-center flex-wrap md:flex-nowrap flex-col-reverse sm:flex-row">
+        <div className=" text-slate-800  px-6 md:px-20 py-10 space-y-14 max-w-[900px]">
         {sections.map((section, idx) => (
           <div key={idx} {...fadeUp} className="space-y-4">
             {section}
@@ -53,16 +53,16 @@ export default function Page() {
 
 const sections = [
   <>
-    <div className="flex justify-start gap-6 items-center">
+    <div className="flex justify-between gap-6 items-center">
       <h1 className="text-xl md:text-3xl font-bold text-blue-900">
-        ✈️ Delta Air Lines
+        Delta Air Lines
       </h1>
       <Image
         src="https://d3.harvard.edu/platform-rctom/wp-content/uploads/sites/4/2015/12/delta-logo1.jpg"
         alt="Delta History"
-        width={300}
-        height={170}
-        className="rounded h-[170px] w-[300px]"
+        width={250}
+        height={90}
+        className="rounded h-[90px] w-[150px] sm:w-[250px] object-cover"
       />
     </div>
     <p className="text-lg leading-relaxed">
@@ -251,13 +251,10 @@ const sections = [
   ,
   ,
   <>
-    <main className="bg-white text-gray-800 space-y-12">
+    <main className=" text-slate-800 space-y-12">
       {/* Hero Section */}
-      <section className="text-center space-y-4">
-        <h1 className="text-4xl md:text-6xl font-bold text-blue-800">
-          Delta Air Lines
-        </h1>
-        <p className="text-xl md:text-2xl text-gray-600 max-w-2xl mx-auto">
+      <section className="space-y-3">
+        <p className="text-lg md:text-xl font-medium text-slate-700">
           A Top-Ranked U.S. Airline Delivering Exceptional Travel Experiences
         </p>
         <div className="w-full h-64 md:h-96 relative mx-auto">
@@ -434,7 +431,7 @@ const sections = [
         </ul>
       </section>
       {/* Final Verdict */}
-      <section className="bg-gray-50 p-6 rounded-xl shadow-lg">
+      <section className="bg-slate-50 p-6 rounded-xl shadow-lg">
         <h2 className="text-2xl font-semibold mb-4 text-purple-700">
           📝 Final Verdict
         </h2>
