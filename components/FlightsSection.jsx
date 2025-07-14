@@ -1,7 +1,7 @@
 const FlightCard = ({ title, imageUrl, description, subDescription, padding }) => (
   <div className=" shadow-lg rounded-lg overflow-hidden w-[300px]">
     <img src={imageUrl} alt={title} className={`${padding} h-48 object-contain bg-white w-[300px]`} />
-    <div className="p-4 bg-gradient-to-bl from-violet-500 to-fuchsia-600">
+    <div className="p-4 bg-gradient-to-bl from-violet-800 to-fuchsia-900">
       <div className="text-start h-[216px]">
         <h3 className="text-xl font-bold text-white">{title}</h3>
         <p className="mt-2 text-slate-100 w-full font-semibold">{description}</p>

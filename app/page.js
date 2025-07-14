@@ -2,7 +2,7 @@ import AboutSection from "@/components/AboutSection";
 import ContactSection from "@/components/ContactSection";
 import FlightsSection from "@/components/FlightsSection";
 import CallQRCode from "@/components/qrcode/CallQrCode";
-import { PhoneIcon } from "@heroicons/react/24/outline";
+import { PhoneIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 
 const Home = () => (
@@ -30,10 +30,10 @@ const Home = () => (
             Customer Service
           </div>
           <div className="mt-3 flex items-center gap-2">
-            <PhoneIcon className='w-8 h-8 text-primary/90 '/> 
+            <PhoneIcon className='w-8 h-8 text-primary '/> 
             <a
               href="tel:+12152688872"
-              className=" font-semibold text-2xl md:text-4xl  text-primary/90"
+              className=" font-semibold text-2xl md:text-3xl  text-primary/90"
             >
              +1 (215) 268-8872
             </a>
