@@ -45,22 +45,22 @@ export default function Page() {
               className="rounded-2xl shadow-md w-full h-70"
             /> */}
             <p className="text-lg leading-relaxed">
-              <strong className="text-lg leading-relaxed">Official Name</strong>:
+              <strong className="text-lg leading-relaxed font-semibold">Official Name</strong>:
               United Airlines, Inc.
               <br />
-              <strong className="text-lg leading-relaxed">Headquarters</strong>:
+              <strong className="text-lg leading-relaxed font-semibold">Headquarters</strong>:
               Willis Tower (formerly Sears Tower), Chicago, Illinois, USA
               <br />
-              <strong className="text-lg leading-relaxed">Year Founded</strong>:
+              <strong className="text-lg leading-relaxed font-semibold">Year Founded</strong>:
               Traces its origins back to 1926 as Varney Air Lines, officially
               rebranded as United Airlines in 1931
               <br />
-              <strong className="text-lg leading-relaxed">
+              <strong className="text-lg leading-relaxed font-semibold">
                 Parent Organization
               </strong>
               : United Airlines Holdings, Inc.
               <br />
-              <strong className="text-lg leading-relaxed">Airline Codes</strong>:
+              <strong className="text-lg leading-relaxed font-semibold">Airline Codes</strong>:
               <br />
             </p>
             <ul className="list-disc list-inside text-lg">

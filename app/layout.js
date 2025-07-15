@@ -4,12 +4,11 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 
-let home = "home";
 export const metadata = {
-  title: home,
-  description: "home page seo",
+  title: "AirlineIn",
+  description: "The AirlineIn is customer support service. Provide users to seemless experience over call.",
   charset: "utf-8",
-  content: "iRail check available seats pnr route of all train at once",
+  keywords:"airlinein, flight booing, flight customer service, airline customer service",
   robots: "index, follow",
   alternates: {
     canonical: "http://localhost:3000",

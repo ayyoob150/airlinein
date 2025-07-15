@@ -9,7 +9,7 @@ export default function Page() {
       {/* Hero Section */}
       <section className=" space-y-4">
         <div className="flex justify-between gap-6 items-center">
-              <h1 className="text-xl md:text-3xl font-bold text-blue-900">
+              <h1 className="text-2xl md:text-3xl font-bold text-blue-900">
                 JetBlue AirLine
               </h1>
               <Image
@@ -17,7 +17,7 @@ export default function Page() {
                 alt="jetblue history"
                 width={250}
                 height={90}
-                className="rounded h-[90px] w-[150px] sm:w-[250px] object-cover "
+                className="rounded  w-[150px] h-[60px] object-cover "
               />
             </div>
         <p className="text-lg text-slate-600  ">

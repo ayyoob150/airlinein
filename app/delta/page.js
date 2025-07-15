@@ -4,11 +4,7 @@ import Head from "next/head";
 import ContactSection from "@/components/ContactSection";
 
 export default function Page() {
-  const fadeUp = {
-    initial: { opacity: 0, y: 30 },
-    whileInView: { opacity: 1, y: 0 },
-    transition: { duration: 0.6 },
-  };
+
 
   return (
     <>
@@ -35,7 +31,7 @@ export default function Page() {
       <div className="flex gap-0 justify-center flex-wrap md:flex-nowrap flex-col-reverse sm:flex-row">
         <div className=" text-slate-800  px-6 md:px-20 py-10 space-y-14 max-w-[900px]">
         {sections.map((section, idx) => (
-          <div key={idx} {...fadeUp} className="space-y-4">
+          <div key={idx}  className="space-y-4">
             {section}
           </div>
         ))}
@@ -43,7 +39,6 @@ export default function Page() {
       </div>
       <div>
         <ContactSection name="Delta" isSide={true}/>
-
       </div>
       </div>
 
@@ -54,7 +49,7 @@ export default function Page() {
 const sections = [
   <>
     <div className="flex justify-between gap-6 items-center">
-      <h1 className="text-xl md:text-3xl font-bold text-blue-900">
+      <h1 className="text-2xl md:text-3xl font-bold text-blue-900">
         Delta Air Lines
       </h1>
       <Image
