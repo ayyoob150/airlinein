@@ -1,47 +1,16 @@
 // app/layout.js or app/layout.tsx
 
 export const metadata = {
-  title: "United Airline Customer Service Number",
-  description: "United Airlines provides seamless customer support. Contact us for help with bookings, cancellations, and inquiries.",
+  title: "Spirit Airline Customer Service Number 215-268-8872",
+  description: "Looking for Spirit airline customer service? Get the most up-to-date phone numbers, ideal call hours, and step-by-step guidance to resolve your issue—plus, Spirit airline get human.",
   charset: "utf-8",
-  keywords: [
-    "United Airline", 
-    "flight booking", 
-    "flight customer service", 
-    "airline customer service", 
-    "United Airlines phone number"
-  ],
+  keywords: "Spirit airline customer service, Spirit airline phone number, Spirit airline customer phone number, Spirit airline customer service phone number, Spirit airline customer service phone, call Spirit airline, Spirit airline support number, Spirit airline customer number, Spirit airline customer service number, Spirit airline 800 number, Spirit airline customer support number, Spirit airline 800, Spirit airline toll free, Spirit airline customer service toll free, Spirit airline customer service 800, Spirit airline customer service 800 number, Spirit airline customer service 800 phone, Spirit airline contact number, Spirit airline contact phone, Spirit airline contact, Spirit airline customer service contact, Spirit airline customer service contact number, Spirit airline customer service email, Spirit airline customer service email address, Spirit airline customer service chat, Spirit airline customer service live chat, contact Spirit airline, contact Spirit airline customer service, Spirit airline.com phone number, Spirit airline.com customer service, Egencia LLC phone number, Egencia LLC customer service, Spirit airline phone number, Spirit airline customer service, Spirit airline get human,",
   robots: "index, follow",
   alternates: {
-    canonical: "https://yourdomain.com", // replace with your actual domain
+    canonical: "https://yourdomain.com",
   },
-  openGraph: {
-    title: "United Airline Customer Service",
-    description: "Reach United Airlines customer support for booking and flight assistance.",
-    url: "https://yourdomain.com",
-    siteName: "United Airline",
-    images: [
-      {
-        url: "/og-image.jpg", // optional: replace with your image path
-        width: 1200,
-        height: 630,
-        alt: "United Airline Support",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "United Airline Customer Service",
-    description: "Fast and reliable support for flight bookings and cancellations.",
-    images: ["/twitter-card.jpg"], // optional
-  },
-  themeColor: "#000000",
   viewport: "width=device-width, initial-scale=1",
-  metadataBase: new URL("https://yourdomain.com"),
 };
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">

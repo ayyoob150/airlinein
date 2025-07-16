@@ -1,45 +1,15 @@
 // app/layout.js or app/layout.tsx
 
 export const metadata = {
-  title: "United Airline Customer Service Number",
-  description: "United Airlines provides seamless customer support. Contact us for help with bookings, cancellations, and inquiries.",
+  title: "Delta Customer Service Number 215-268-8872",
+  description: "Looking for Delta customer service? Get the most up-to-date phone numbers, ideal call hours, and step-by-step guidance to resolve your issue—plus, Delta get human.",
   charset: "utf-8",
-  keywords: [
-    "United Airline", 
-    "flight booking", 
-    "flight customer service", 
-    "airline customer service", 
-    "United Airlines phone number"
-  ],
+  keywords: "Delta customer service, Delta phone number, Delta customer phone number, Delta customer service phone number, Delta customer service phone, call Delta, Delta support number, Delta customer number, Delta customer service number, Delta 800 number, Delta customer support number, Delta 800, Delta toll free, Delta customer service toll free, Delta customer service 800, Delta customer service 800 number, Delta customer service 800 phone, Delta contact number, Delta contact phone, Delta contact, Delta customer service contact, Delta customer service contact number, Delta customer service email, Delta customer service email address, Delta customer service chat, Delta customer service live chat, contact Delta, contact Delta customer service, Delta.com phone number, Delta.com customer service, Egencia LLC phone number, Egencia LLC customer service, Delta phone number, Delta customer service, Delta get human,",
   robots: "index, follow",
   alternates: {
-    canonical: "https://yourdomain.com", // replace with your actual domain
+    canonical: "https://yourdomain.com",
   },
-  openGraph: {
-    title: "United Airline Customer Service",
-    description: "Reach United Airlines customer support for booking and flight assistance.",
-    url: "https://yourdomain.com",
-    siteName: "United Airline",
-    images: [
-      {
-        url: "/og-image.jpg", // optional: replace with your image path
-        width: 1200,
-        height: 630,
-        alt: "United Airline Support",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "United Airline Customer Service",
-    description: "Fast and reliable support for flight bookings and cancellations.",
-    images: ["/twitter-card.jpg"], // optional
-  },
-  themeColor: "#000000",
   viewport: "width=device-width, initial-scale=1",
-  metadataBase: new URL("https://yourdomain.com"),
 };
 
 export default function RootLayout({ children }) {

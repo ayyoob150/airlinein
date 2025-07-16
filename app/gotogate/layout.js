@@ -1,45 +1,15 @@
 // app/layout.js or app/layout.tsx
 
 export const metadata = {
-  title: "United Airline Customer Service Number",
-  description: "United Airlines provides seamless customer support. Contact us for help with bookings, cancellations, and inquiries.",
+  title: "Gotogate Customer Service Number 215-268-8872",
+  description: "Looking for Gotogate customer service? Get the most up-to-date phone numbers, ideal call hours, and step-by-step guidance to resolve your issue—plus, Gotogate get human.",
   charset: "utf-8",
-  keywords: [
-    "United Airline", 
-    "flight booking", 
-    "flight customer service", 
-    "airline customer service", 
-    "United Airlines phone number"
-  ],
+  keywords: "Gotogate customer service, Gotogate phone number, Gotogate customer phone number, Gotogate customer service phone number, Gotogate customer service phone, call Gotogate, Gotogate support number, Gotogate customer number, Gotogate customer service number, Gotogate 800 number, Gotogate customer support number, Gotogate 800, Gotogate toll free, Gotogate customer service toll free, Gotogate customer service 800, Gotogate customer service 800 number, Gotogate customer service 800 phone, Gotogate contact number, Gotogate contact phone, Gotogate contact, Gotogate customer service contact, Gotogate customer service contact number, Gotogate customer service email, Gotogate customer service email address, Gotogate customer service chat, Gotogate customer service live chat, contact Gotogate, contact Gotogate customer service, Gotogate.com phone number, Gotogate.com customer service, Egencia LLC phone number, Egencia LLC customer service, Gotogate phone number, Gotogate customer service, Gotogate get human,",
   robots: "index, follow",
   alternates: {
-    canonical: "https://yourdomain.com", // replace with your actual domain
+    canonical: "https://yourdomain.com",
   },
-  openGraph: {
-    title: "United Airline Customer Service",
-    description: "Reach United Airlines customer support for booking and flight assistance.",
-    url: "https://yourdomain.com",
-    siteName: "United Airline",
-    images: [
-      {
-        url: "/og-image.jpg", // optional: replace with your image path
-        width: 1200,
-        height: 630,
-        alt: "United Airline Support",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "United Airline Customer Service",
-    description: "Fast and reliable support for flight bookings and cancellations.",
-    images: ["/twitter-card.jpg"], // optional
-  },
-  themeColor: "#000000",
   viewport: "width=device-width, initial-scale=1",
-  metadataBase: new URL("https://yourdomain.com"),
 };
 
 export default function RootLayout({ children }) {
