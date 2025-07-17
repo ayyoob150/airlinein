@@ -12,9 +12,144 @@ export const metadata = {
   viewport: "width=device-width, initial-scale=1",
 };
 
+const deltaOrg = {
+  "@context": "https://schema.org",
+  "@type": "Airline",
+  "name": "Delta Air Lines",
+  "url": "https://www.delta.com",
+  "logo": "https://www.delta.com/etc.clientlibs/delta-com/clientlibs/clientlib-base/resources/img/logo.svg",
+  "image": "https://www.delta.com/content/dam/delta-www/skyclub/hero-images/JFK-club-hero.jpg",
+  "description": "Delta Air Lines, Inc., headquartered in Atlanta, Georgia, is a major U.S. airline operating through nine hubs. Its largest hub, in terms of passenger traffic and flight departures, is Hartsfield–Jackson Atlanta International Airport.",
+  "telephone": "+18001236645",
+  "foundingDate": "1928-12-03",
+  "foundingLocation": "United States",
+  "numberOfEmployees": 103000,
+  "memberOf": [
+    { "@type": "Organization", "name": "SkyTeam" },
+    { "@type": "Organization", "name": "SkyTeam Cargo" }
+  ],
+  "areaServed": { "@type": "Country", "name": "United States" },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Atlanta",
+    "addressRegion": "GA",
+    "addressCountry": "US"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+18001236645",
+    "contactType": "Customer Service",
+    "areaServed": "US",
+    "availableLanguage": ["English","Spanish"]
+  },
+  "sameAs": [
+    "https://www.facebook.com/delta",
+    "https://www.linkedin.com/company/delta-air-lines",
+    "https://www.youtube.com/delta",
+    "https://www.instagram.com/delta"
+  ],
+  "chiefExecutive": {
+    "@type": "Person",
+    "name": "Ed Bastian",
+    "startDate": "2016-05-02"
+  },
+  "employee": [
+    {
+      "@type": "Person",
+      "name": "Dan Janki",
+      "jobTitle": "CFO"
+    },
+    {
+      "@type": "Person",
+      "name": "Rahul Samant",
+      "jobTitle": "CIO"
+    },
+    {
+      "@type": "Person",
+      "name": "Glen W. Hauenstein",
+      "jobTitle": "President"
+    }
+  ],
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Fleet Size",
+      "value": "987"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Destinations Served",
+      "value": "311"
+    }
+  ],
+  "tickerSymbol": "DAL"
+}
+
+
+const faq ={
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How can I contact Delta customer service?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can contact Delta by calling 1-800-123-6645."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is AirlineIN affiliated with Delta Airline?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, AirlineIn is an independent company that helps users contact customer service quickly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I talk to Delta reservations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call Delta Airline Reservations directly or use their website to manage your booking."
+      }
+    }
+  ]
+}
+  const contactSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Delta Customer Support",
+    "telephone": "+1-800-123-4567",
+    "jobTitle": "Support Executive",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Delta Customer Support Service"
+    }
+  };
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify(deltaOrg)
+              }}
+            />
+        <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify(faq)
+              }}
+            />
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify(contactSchema)
+              }}
+            />
+      </head>
       <body>{children}</body>
     </html>
   );
