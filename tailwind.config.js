@@ -1,7 +1,5 @@
 // tailwind.config.js
 
-import { color } from 'framer-motion';
-
 /** @type {import('tailwindcss').Config} */
 const config = {
   content: [

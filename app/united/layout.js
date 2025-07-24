@@ -42,7 +42,7 @@ const org = {
     "telephone": "+18776481111",
     "contactType": "Customer Service",
     "areaServed": "US",
-    "availableLanguage": ["English","Spanish"]
+    "availableLanguage": ["English", "Spanish"]
   },
   "sameAs": [
     "https://www.facebook.com/united",
@@ -70,7 +70,7 @@ const org = {
   "tickerSymbol": "UAL"
 }
 
-const faq ={
+const faq = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
@@ -100,42 +100,40 @@ const faq ={
     }
   ]
 }
-  const contactSchema = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "United Customer Support",
-    "telephone": "+1-800-123-4567",
-    "jobTitle": "Support Executive",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "United Customer Support Service"
-    }
-  };
+const contactSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "United Customer Support",
+  "telephone": "+1-800-123-4567",
+  "jobTitle": "Support Executive",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "United Customer Support Service"
+  }
+};
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <head>
-        <script
-              type="application/ld+json"
-              dangerouslySetInnerHTML={{
-                __html: JSON.stringify(org)
-              }}
-            />
-        <script
-              type="application/ld+json"
-              dangerouslySetInnerHTML={{
-                __html: JSON.stringify(faq)
-              }}
-            />
-            <script
-              type="application/ld+json"
-              dangerouslySetInnerHTML={{
-                __html: JSON.stringify(contactSchema)
-              }}
-            />
-      </head>
-      <body>{children}</body>
-    </html>
+    <section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(org)
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faq)
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(contactSchema)
+        }}
+      />
+      {children}
+    </section>
   );
 }

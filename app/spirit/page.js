@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Head from 'next/head';
 import ContactSection from "@/components/ContactSection";
 
 
@@ -28,7 +27,7 @@ export default function SpiritAirlinesPage() {
         </p>
       </div>
 
-      <div className="space-y-6">
+      <div className="space-y-6 text-secondaryblue">
         <h2 className="text-2xl font-medium">💰 Business Model & Strategy</h2>
         <Image src="/placeholder-strategy.jpg" alt="Spirit Business Model" width={1200} height={600} className="rounded-2xl shadow-md" />
         <p className="text-lg leading-relaxed">
