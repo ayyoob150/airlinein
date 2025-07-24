@@ -12,10 +12,126 @@ export const metadata = {
   viewport: "width=device-width, initial-scale=1",
 };
 
+const org = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Gotogate",
+  "url": "https://www.gotogate.com",
+  "logo": "https://www.etraveligroup.com/assets/logos/gotogate-logo.svg",
+  "description": "Gotogate is a global online travel agency specializing in flight, hotel and cab bookings, operating in over 75 markets and serving ~30 million travellers annually as part of Sweden‑based Etraveli Group.",
+  "foundingDate": "1997",
+  "foundingLocation": "Uppsala, Sweden",
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "Etraveli Group AB",
+    "url": "https://www.etraveligroup.com"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Uppsala",
+    "addressCountry": "SE"
+  },
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "contactType": "Customer Service",
+      "telephone": "+1‑786‑405‑8511",
+      "availableLanguage": ["English","Spanish"]
+    },
+    {
+      "@type": "ContactPoint",
+      "contactType": "Corporate Headquarters",
+      "telephone": "+46‑(0)770‑457751",
+      "areaServed": "Global",
+      "availableLanguage": ["English", "Spanish"]
+    }
+  ],
+  "memberOf": {
+    "@type": "Organization",
+    "name": "Etraveli Group AB"
+  },
+  "sameAs": [
+    "https://twitter.com/gotogate",
+    "https://www.facebook.com/gotogate"
+  ],
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Markets served",
+      "value": "75+"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Annual customers",
+      "value": "30 million"
+    }
+  ]
+}
+const faq = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How can I contact Gotogate customer service?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can contact Gotogate by calling 1-800-123-6645."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is AirlineIN affiliated with Gotogate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, AirlineIn is an independent company that assists users in reaching customer service quickly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I talk to Gotogate reservations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call Expedia Reservations directly or use their website to manage your booking."
+      }
+    }
+  ]
+}
+const contactSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Gotogate Customer Support",
+  "telephone": "+1-800-123-4567",
+  "jobTitle": "Support Executive",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Gotogate Customer Support Service"
+  }
+};
+
+
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
+    <section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(org)
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faq)
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(contactSchema)
+        }}
+      />
+      {children}
+    </section>
   );
 }

@@ -103,7 +103,7 @@ const faq = {
       "name": "Is AirlineIN affiliated with Delta Airline?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No, AirlineIn is an independent company that helps users contact customer service quickly."
+        "text": "No, AirlineIn is an independent company that assists users in reaching customer service quickly."
       }
     },
     {
