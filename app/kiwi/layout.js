@@ -160,3 +160,69 @@ export default function RootLayout({ children }) {
     </section>
   );
 }
+
+
+
+{/* <script data-ad-client="ca-pub-5211547430456695" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<link rel="canonical" href="https://gethuman.com/phone-number/Expedia" />
+<link rel="shortcut icon" href="https://gethuman.com/dist/img/logo-32-cropped.png" />
+<link rel="icon" href="https://gethuman.com/dist/img/logo-32-cropped.png" />
+<link rel="apple-touch-icon" href="https://gethuman.com/dist/img/logo-60.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="https://gethuman.com/dist/img/logo-76.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="https://gethuman.com/dist/img/logo-120.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="https://gethuman.com/dist/img/logo-152.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="https://gethuman.com/dist/img/logo-180.png" />
+<link rel="amphtml" href="/a/phone-number/Expedia" /><meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" /><meta property="og:title" content="Expedia Customer Service Phone Number 800-397-3342: Call Support" />
+<meta property="og:description" content="Expedia's best customer service contact information, when to call, what to say, and free AI tools that can call and talk to customer support for you." />
+<meta property="og:url" content="https://gethuman.com/phone-number/Expedia" />
+<meta property="og:site_name" content="gethuman.com" />
+<meta property="og:image" content="https://gethuman.com/dist/img/logo-v-500.png" />
+<meta property="og:image:width" content="500" /><meta property="og:image:height" content="500" />
+<meta property="og:image:alt" content="Expedia's best customer service contact information, when to call, what to say, and free AI tools that can call and talk to customer support for you." />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@gethumancom" />
+<meta property="og:updated_time" content="2025-07-24T15:48:35+00:00" />
+<meta property="article:tag" content="Expedia customer service, Expedia phone number, Expedia customer phone number, Expedia customer service phone number, Expedia customer service phone, call Expedia, Expedia support number, Expedia customer number, Expedia customer service number, Expedia 800 number, Expedia customer support number, Expedia 800, Expedia toll free, Expedia customer service toll free, Expedia customer service 800, Expedia customer service 800 number, Expedia customer service 800 phone, Expedia contact number, Expedia contact phone, Expedia contact, Expedia customer service contact, Expedia customer service contact number, Expedia customer service email, Expedia customer service email address, Expedia customer service chat, Expedia customer service live chat, contact Expedia, contact Expedia customer service, Expedia.com phone number, Expedia.com customer service, Egencia LLC phone number, Egencia LLC customer service, Expedia phone number, Expedia customer service" /><meta property="article:section" content="Travel - General" />
+<meta property="article:published_time" content="2009-02-23T11:44:31+00:00" />
+<meta property="article:modified_time" content="2025-07-24T15:48:35+00:00" />
+<script type="application/ld+json">{
+                            "@context": "http://schema.org",
+                            "@type": "Article",
+                            "mainEntityOfPage": "https://gethuman.com/phone-number/Expedia",
+                            "publisher": {
+                                
+            "@type": "Organization",
+            "name": "GetHuman",
+            "url": "https://gethuman.com",
+            "email": "hello@gethuman.com",
+            "telephone": "+1 617-651-0250",
+            "image": "https://gethuman.com/dist/img/logo-gethuman-left.png",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://gethuman.com/dist/img/logo-gethuman-left.png"
+            },
+            "description": "Contact companies faster and fix customer services issues easier.",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Chestnut Hill",
+                "addressRegion": "MA",
+                "postalCode": "02467",
+                "streetAddress": "675 VFW Parkway, Unit 328",
+                "addressCountry": "US"
+            }
+        
+                            },
+                            "headline": "Expedia Customer Service Phone Number 800-397-3342: Call Support",
+                            "datePublished": "2009-02-23T11:44:31+00:00",
+                            "dateModified": "2025-07-24T15:48:35+00:00",
+                            "author": {
+                "@type": "Person",
+                "name": "Christian Allen",
+                "email": "hello+christian@gethuman.com",
+                "image": "img/christian-headshot-96.png",
+                "url": "https://www.linkedin.com/in/christiantallen/"
+            },
+                            "description": "Expedia's best customer service contact information, when to call, what to say, and free AI tools that can call and talk to customer support for you.",
+                            "image": "https://gethuman.com/dist/img/logo-v-500.png"
+                        }</script> */}
