@@ -26,20 +26,20 @@ export default function Page() {
         <meta property="og:type" content="website" />
       </Head>
 
-      
+
 
       <div className="flex gap-0 justify-center flex-wrap md:flex-nowrap flex-col-reverse sm:flex-row">
         <div className=" text-slate-800  px-6 md:px-20 py-10 space-y-14 max-w-[900px]">
-        {sections.map((section, idx) => (
-          <div key={idx}  className="space-y-4">
-            {section}
-          </div>
-        ))}
-        {/* {...sections} */}
-      </div>
-      <div>
-        <ContactSection name="Delta" isSide={true}/>
-      </div>
+          {sections.map((section, idx) => (
+            <div key={idx} className="space-y-4">
+              {section}
+            </div>
+          ))}
+          {/* {...sections} */}
+        </div>
+        <div>
+          <ContactSection name="Delta" isSide={true} />
+        </div>
       </div>
 
     </>

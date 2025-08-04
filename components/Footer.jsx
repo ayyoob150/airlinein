@@ -35,16 +35,16 @@ export default function Footer() {
         <div>
           <h3 className="font-bold mb-2">Flight service</h3>
           <ul className="space-y-1">
-            <HoverGradient>Delta Airline</HoverGradient>
-            <HoverGradient>United Airlines</HoverGradient>
-            <HoverGradient>JetBlue Airline</HoverGradient>
-            <HoverGradient>Spirit Airlines</HoverGradient>
-            <HoverGradient>British Airways</HoverGradient>
-            <HoverGradient>Allegiant Air</HoverGradient>
-            <HoverGradient>Hawaiian Airlines</HoverGradient>
-            <HoverGradient>Alaska Airlines</HoverGradient>
-            <HoverGradient>Envoy Air</HoverGradient>
-            <HoverGradient>PSA Airlines</HoverGradient>
+            <HoverGradient href={"/delta"}>Delta Airline</HoverGradient>
+            <HoverGradient href={"/united"}>United Airlines</HoverGradient>
+            <HoverGradient href={"/jetblue"}>JetBlue Airline</HoverGradient>
+            <HoverGradient href={"/spirit"}>Spirit Airlines</HoverGradient>
+            <HoverGradient href={"/britishAirways"}>British Airways</HoverGradient>
+            <HoverGradient href={"/americanAirlines"}>American Airline</HoverGradient>
+            <HoverGradient href={"/hawaiianAirlines"}>Hawaiian Airlines</HoverGradient>
+            <HoverGradient href={"/alaskaAirlines"}>Alaska Airlines</HoverGradient>
+            <HoverGradient href={"/sunCountryAirlines"}>Sun Country Airlines</HoverGradient>
+            <HoverGradient href={"/"}>PSA Airlines</HoverGradient>
           </ul>
         </div>
 

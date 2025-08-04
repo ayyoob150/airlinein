@@ -13,6 +13,9 @@ export const metadata = {
   alternates: {
     canonical: "http://localhost:3000",
   },
+  icons: {
+    icon: '/logo/logo.png',
+  },
 };
 
 export default function RootLayout({ children }) {
