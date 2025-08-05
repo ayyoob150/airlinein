@@ -44,7 +44,9 @@ export default function Footer() {
             <HoverGradient href={"/hawaiianAirlines"}>Hawaiian Airlines</HoverGradient>
             <HoverGradient href={"/alaskaAirlines"}>Alaska Airlines</HoverGradient>
             <HoverGradient href={"/sunCountryAirlines"}>Sun Country Airlines</HoverGradient>
-            <HoverGradient href={"/"}>PSA Airlines</HoverGradient>
+            <HoverGradient href={"/frontierAirlines"}>Frontier Airlines</HoverGradient>
+            <HoverGradient href={"/southwestAirlines"}>Southwest Airlines</HoverGradient>
+            <HoverGradient href={"/psaAirlines"}>PSA Airlines</HoverGradient>
           </ul>
         </div>
 
@@ -92,13 +94,13 @@ export default function Footer() {
         </p>
 
         <p className="text-gray-400 text-xs mt-2">
-          ↗ Notice indicator that this external link may not follow the same accessibility or privacy policies as Alaska Airlines.
+          ↗ Notice indicator that this external link may not follow the same accessibility or privacy policies.
         </p>
         <p className="text-gray-400 text-xs mt-4">
           ⓘ Notice indicator to alert users that action will result in the browser opening a new tab or window.
         </p>
         <p className="text-gray-500 text-xs mt-4">
-          © 2025 Alaska Airlines, Inc. All rights reserved.
+          © 2025 All rights reserved.
         </p>
       </div>
     </footer>

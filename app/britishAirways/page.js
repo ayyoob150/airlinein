@@ -15,7 +15,7 @@ export default function Page() {
                             alt="British Airways History"
                             width={250}
                             height={90}
-                            className="rounded h-[90px] w-[150px] sm:w-[280px] bg-white p-2"
+                            className="rounded h-[90px] w-[150px] sm:w-[280px] bg-white p-2 object-contain"
                         />
                     </div>
                     <p className="text-lg leading-relaxed mt-2">
