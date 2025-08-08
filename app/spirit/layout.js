@@ -14,7 +14,7 @@ export const metadata = {
 
 const org = {
   "@context": "https://schema.org",
-  "@type": "Airline",
+  "@type": "Organization",
   "name": "Spirit Airlines",
   "url": "https://www.spirit.com",
   "logo": "https://www.spirit.com/etc/designs/sva/logo.svg",
@@ -88,7 +88,7 @@ const faq = {
     },
     {
       "@type": "Question",
-      "name": "Is AirlineIN affiliated with Spirit Airline?",
+      "name": "Is AirlineIn affiliated with Spirit Airline?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "No, AirlineIn is an independent company that assists users in reaching customer service quickly."

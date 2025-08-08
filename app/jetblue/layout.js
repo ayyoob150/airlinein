@@ -14,7 +14,7 @@ export const metadata = {
 
 const org = {
   "@context": "https://schema.org",
-  "@type": "Airline",
+  "@type": "Organization",
   "name": "JetBlue Airways",
   "url": "https://www.jetblue.com",
   "logo": "https://www.jetblue.com/content/dam/jetblue/common/logos/jetblue-logo.svg",
@@ -110,7 +110,7 @@ const faq = {
     },
     {
       "@type": "Question",
-      "name": "Is AirlineIN affiliated with Jetblue Airline?",
+      "name": "Is AirlineIn affiliated with Jetblue Airline?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "No, AirlineIn is an independent company that assists users in reaching customer service quickly."

@@ -86,7 +86,7 @@ const faq = {
     },
     {
       "@type": "Question",
-      "name": "Is AirlineIN affiliated with Booking.com?",
+      "name": "Is AirlineIn affiliated with Booking.com?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "No, AirlineIn is an independent company that assists users in reaching customer service quickly."

@@ -83,9 +83,6 @@ export default function SpiritAirlinesPage() {
       </div>
 
       <div
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
         className="space-y-6"
       >
         <h1 className="text-4xl md:text-6xl font-medium text-slate-600">✈️ Spirit Airlines: A Smart Choice</h1>
@@ -141,9 +138,6 @@ export default function SpiritAirlinesPage() {
       ].map((section, idx) => (
         <div
           key={idx}
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: idx * 0.1 }}
           className="space-y-6"
         >
           <h2 className="text-2xl font-medium text-slate-700">{section.title}</h2>
@@ -154,9 +148,6 @@ export default function SpiritAirlinesPage() {
       ))}
 
       <div
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
         className="space-y-6"
       >
         <h2 className="text-2xl font-medium text-slate-700">✅ Final Take: Spirit Delivers Value</h2>

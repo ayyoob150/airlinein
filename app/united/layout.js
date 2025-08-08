@@ -13,7 +13,7 @@ export const metadata = {
 };
 const org = {
   "@context": "https://schema.org",
-  "@type": "Airline",
+  "@type": "Organization",
   "name": "United Airlines",
   "url": "https://www.united.com",
   "logo": "https://www.united.com/content/dam/united/en/images/logos/united-logo.svg",
@@ -84,7 +84,7 @@ const faq = {
     },
     {
       "@type": "Question",
-      "name": "Is AirlineIN affiliated with United Airline?",
+      "name": "Is AirlineIn affiliated with United Airline?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "No, AirlineIn is an independent company that assists users in reaching customer service quickly."

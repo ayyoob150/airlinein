@@ -12,9 +12,9 @@ export const metadata = {
   viewport: "width=device-width, initial-scale=1",
 };
 
-const deltaOrg = {
+const org = {
   "@context": "https://schema.org",
-  "@type": "Airline",
+  "@type": "Organization",
   "name": "Delta Air Lines",
   "url": "https://www.delta.com",
   "logo": "https://www.delta.com/etc.clientlibs/delta-com/clientlibs/clientlib-base/resources/img/logo.svg",
@@ -100,7 +100,7 @@ const faq = {
     },
     {
       "@type": "Question",
-      "name": "Is AirlineIN affiliated with Delta Airline?",
+      "name": "Is AirlineIn affiliated with Delta Airline?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "No, AirlineIn is an independent company that assists users in reaching customer service quickly."
@@ -133,7 +133,7 @@ export default function RootLayout({ children }) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(deltaOrg)
+          __html: JSON.stringify(org)
         }}
       />
       <script
