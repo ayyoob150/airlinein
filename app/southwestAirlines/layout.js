@@ -1,5 +1,14 @@
 // app/layout.js or app/layout.tsx
 
+import Script from 'next/script';
+import { headers } from 'next/headers';
+
+const headersList = headers();
+  const host = headersList.get("host"); 
+  const protocol = host?.includes("local") ? "http" : "https";
+  const host_url = `${protocol}://${host}`;
+
+
 export const metadata = {
   title: "Southwest Customer Service Number 215-268-8872",
   description: "Looking for Southwest customer service? Get the most up-to-date phone numbers, ideal call hours, and step-by-step guidance to resolve your issue—plus, Southwest get human.",
@@ -7,7 +16,7 @@ export const metadata = {
   keywords: "Southwest customer service, Southwest phone number, Southwest customer phone number, Southwest customer service phone number, Southwest customer service phone, call Southwest, Southwest support number, Southwest customer number, Southwest customer service number, Southwest 800 number, Southwest customer support number, Southwest 800, Southwest toll free, Southwest customer service toll free, Southwest customer service 800, Southwest customer service 800 number, Southwest customer service 800 phone, Southwest contact number, Southwest contact phone, Southwest contact, Southwest customer service contact, Southwest customer service contact number, Southwest customer service email, Southwest customer service email address, Southwest customer service chat, Southwest customer service live chat, contact Southwest, contact Southwest customer service, Southwest.com phone number, Southwest.com customer service, Egencia LLC phone number, Egencia LLC customer service, Southwest phone number, Southwest customer service, Southwest get human,",
   robots: "index, follow",
   alternates: {
-    canonical: "https://yourdomain.com",
+    canonical: `${host_url}/southwestAirlines`,
   },
   viewport: "width=device-width, initial-scale=1",
 };
@@ -17,7 +26,8 @@ const org = {
   "@type": "Organization",
   "name": "Southwest Airlines Co.",
   "url": "https://www.southwest.com",
-  "logo": "https://www.southwest.com/assets/images/logos/sw-logo-primary.png",
+  "logo": `${host_url}/assets/airline/1280px-Southwest_Airlines_logo_2014.webp`,
+  "image":`${host_url}/assets/airline/1280px-Southwest_Airlines_logo_2014.webp`,
   "description": "Southwest Airlines Co., headquartered in Dallas, Texas, is a major U.S. low-cost airline recognized for its extensive point-to-point route network, flexible open seating policy, and customer-centric culture.",
   "telephone": "+1-214-792-4000",
   "foundingDate": "1967-03-15",
@@ -128,19 +138,19 @@ const contactSchema = {
 export default function RootLayout({ children }) {
   return (
     <section>
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(org)
         }}
       />
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(faq)
         }}
       />
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(contactSchema)

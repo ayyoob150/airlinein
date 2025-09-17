@@ -1,4 +1,11 @@
 // app/layout.js or app/layout.tsx
+import Script from 'next/script';
+import { headers } from 'next/headers';
+
+const headersList = headers();
+  const host = headersList.get("host"); 
+  const protocol = host?.includes("local") ? "http" : "https";
+  const host_url = `${protocol}://${host}`;
 
 export const metadata = {
   title: "Expedia Customer Service Number 215-268-8872",
@@ -7,7 +14,7 @@ export const metadata = {
   keywords: "Expedia customer service, Expedia phone number, Expedia customer phone number, Expedia customer service phone number, Expedia customer service phone, call Expedia, Expedia support number, Expedia customer number, Expedia customer service number, Expedia 800 number, Expedia customer support number, Expedia 800, Expedia toll free, Expedia customer service toll free, Expedia customer service 800, Expedia customer service 800 number, Expedia customer service 800 phone, Expedia contact number, Expedia contact phone, Expedia contact, Expedia customer service contact, Expedia customer service contact number, Expedia customer service email, Expedia customer service email address, Expedia customer service chat, Expedia customer service live chat, contact Expedia, contact Expedia customer service, Expedia.com phone number, Expedia.com customer service, Egencia LLC phone number, Egencia LLC customer service, Expedia phone number, Expedia customer service, Expedia get human,",
   robots: "index, follow",
   alternates: {
-    canonical: "https://yourdomain.com",
+    canonical: `${host_url}/expedia`,
   },
   viewport: "width=device-width, initial-scale=1",
 };
@@ -16,8 +23,8 @@ const org = {
   "@type": "Organization",
   "name": "Expedia Group, Inc.",
   "url": "https://www.expediagroup.com",
-  "logo": "https://logos-world.net/wp-content/uploads/2020/04/Expedia-Logo.png",
-  "image": "https://www.expediagroup.com/content/dam/expedia-group/global/images/our-brands.jpg",
+  "logo": `${host_url}/assets/airline/expedia.webp`,
+  "image": `${host_url}/assets/airline/expedia.webp`,
   "description": "Expedia Group, Inc. is an American travel technology company operating online travel booking brands including Expedia, Hotels.com, Vrbo, Travelocity, Hotwire, Orbitz, CarRentals.com, Trivago and more.",
   "telephone": "+1-206-481-7200",
   "foundingDate": "1996-10-22",
@@ -133,19 +140,19 @@ const contactSchema = {
 export default function RootLayout({ children }) {
   return (
      <section>
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(org)
         }}
       />
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(faq)
         }}
       />
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(contactSchema)

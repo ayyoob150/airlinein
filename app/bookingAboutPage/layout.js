@@ -1,5 +1,14 @@
 // app/layout.js or app/layout.tsx
 
+
+import Script from "next/script";
+import { headers } from 'next/headers';
+
+const headersList = headers();
+  const host = headersList.get("host"); 
+  const protocol = host?.includes("local") ? "http" : "https";
+  const host_url = `${protocol}://${host}`;
+
 export const metadata = {
   title: "Booking Customer Service Number 215-268-8872",
   description: "Looking for Booking customer service? Get the most up-to-date phone numbers, ideal call hours, and step-by-step guidance to resolve your issue—plus, Booking get human.",
@@ -7,7 +16,7 @@ export const metadata = {
   keywords: "Booking customer service, Booking phone number, Booking customer phone number, Booking customer service phone number, Booking customer service phone, call Booking, Booking support number, Booking customer number, Booking customer service number, Booking 800 number, Booking customer support number, Booking 800, Booking toll free, Booking customer service toll free, Booking customer service 800, Booking customer service 800 number, Booking customer service 800 phone, Booking contact number, Booking contact phone, Booking contact, Booking customer service contact, Booking customer service contact number, Booking customer service email, Booking customer service email address, Booking customer service chat, Booking customer service live chat, contact Booking, contact Booking customer service, Booking.com phone number, Booking.com customer service, Egencia LLC phone number, Egencia LLC customer service, Booking phone number, Booking customer service, Booking get human,",
   robots: "index, follow",
   alternates: {
-    canonical: "https://yourdomain.com",
+    canonical: `${host_url}/bookingAboutPage`,
   },
   viewport: "width=device-width, initial-scale=1",
 };
@@ -16,7 +25,9 @@ const org = {
   "@type": "Organization",
   "name": "Booking.com",
   "url": "https://www.booking.com",
-  "logo": "https://www.booking.com/logo.png",
+  "logo": `${host_url}/assets/airline/booking.webp`,
+  image:
+ `${host_url}/assets/airline/booking.webp`,
   "description": "By investing in technology that takes the friction out of travel, Booking.com seamlessly connects millions of travelers to memorable experiences, a variety of transportation options, and incredible places to stay.",
   "foundingDate": "1996",
   "foundingLocation": "Enschede, Netherlands",
@@ -117,19 +128,19 @@ const contactSchema = {
 export default function RootLayout({ children }) {
   return (
     <section>
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(org)
         }}
       />
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(faq)
         }}
       />
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(contactSchema)

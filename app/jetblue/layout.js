@@ -1,5 +1,13 @@
 // app/layout.js or app/layout.tsx
 
+import Script from 'next/script';
+import { headers } from 'next/headers';
+
+const headersList = headers();
+  const host = headersList.get("host"); 
+  const protocol = host?.includes("local") ? "http" : "https";
+  const host_url = `${protocol}://${host}`;
+
 export const metadata = {
   title: "Jetblue Airline Customer Service Number 215-268-8872",
   description: "Looking for Jetblue airline customer service? Get the most up-to-date phone numbers, ideal call hours, and step-by-step guidance to resolve your issue—plus, Jetblue airline get human.",
@@ -7,7 +15,7 @@ export const metadata = {
   keywords: "Jetblue airline customer service, Jetblue airline phone number, Jetblue airline customer phone number, Jetblue airline customer service phone number, Jetblue airline customer service phone, call Jetblue airline, Jetblue airline support number, Jetblue airline customer number, Jetblue airline customer service number, Jetblue airline 800 number, Jetblue airline customer support number, Jetblue airline 800, Jetblue airline toll free, Jetblue airline customer service toll free, Jetblue airline customer service 800, Jetblue airline customer service 800 number, Jetblue airline customer service 800 phone, Jetblue airline contact number, Jetblue airline contact phone, Jetblue airline contact, Jetblue airline customer service contact, Jetblue airline customer service contact number, Jetblue airline customer service email, Jetblue airline customer service email address, Jetblue airline customer service chat, Jetblue airline customer service live chat, contact Jetblue airline, contact Jetblue airline customer service, Jetblue airline.com phone number, Jetblue airline.com customer service, Egencia LLC phone number, Egencia LLC customer service, Jetblue airline phone number, Jetblue airline customer service, Jetblue airline get human,",
   robots: "index, follow",
   alternates: {
-    canonical: "https://yourdomain.com",
+    canonical: `${host_url}/jetblue`,
   },
   viewport: "width=device-width, initial-scale=1",
 };
@@ -17,8 +25,8 @@ const org = {
   "@type": "Organization",
   "name": "JetBlue Airways",
   "url": "https://www.jetblue.com",
-  "logo": "https://www.jetblue.com/content/dam/jetblue/common/logos/jetblue-logo.svg",
-  "image": "https://www.jetblue.com/content/dam/jetblue/common/planes/jetblue-airbus-a321.jpg",
+  "logo": `${host_url}/assets/airline/jetblue_logo.webp`,
+  "image": `${host_url}/assets/airline/jetblue_logo.webp`,
   "description": "JetBlue Airways Corporation is an American low-cost airline headquartered in Long Island City, New York City.",
   "telephone": "+1 (800) 538‑2583",
   "foundingDate": "1998-08-14",
@@ -142,19 +150,19 @@ const contactSchema = {
 export default function RootLayout({ children }) {
   return (
     <section>
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(org)
         }}
       />
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(faq)
         }}
       />
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(contactSchema)

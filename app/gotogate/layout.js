@@ -1,5 +1,13 @@
 // app/layout.js or app/layout.tsx
 
+import Script from 'next/script';
+import { headers } from 'next/headers';
+
+const headersList = headers();
+  const host = headersList.get("host"); 
+  const protocol = host?.includes("local") ? "http" : "https";
+  const host_url = `${protocol}://${host}`;
+
 export const metadata = {
   title: "Gotogate Customer Service Number 215-268-8872",
   description: "Looking for Gotogate customer service? Get the most up-to-date phone numbers, ideal call hours, and step-by-step guidance to resolve your issue—plus, Gotogate get human.",
@@ -7,7 +15,7 @@ export const metadata = {
   keywords: "Gotogate customer service, Gotogate phone number, Gotogate customer phone number, Gotogate customer service phone number, Gotogate customer service phone, call Gotogate, Gotogate support number, Gotogate customer number, Gotogate customer service number, Gotogate 800 number, Gotogate customer support number, Gotogate 800, Gotogate toll free, Gotogate customer service toll free, Gotogate customer service 800, Gotogate customer service 800 number, Gotogate customer service 800 phone, Gotogate contact number, Gotogate contact phone, Gotogate contact, Gotogate customer service contact, Gotogate customer service contact number, Gotogate customer service email, Gotogate customer service email address, Gotogate customer service chat, Gotogate customer service live chat, contact Gotogate, contact Gotogate customer service, Gotogate.com phone number, Gotogate.com customer service, Egencia LLC phone number, Egencia LLC customer service, Gotogate phone number, Gotogate customer service, Gotogate get human,",
   robots: "index, follow",
   alternates: {
-    canonical: "https://yourdomain.com",
+    canonical: `${host_url}/gotogate`,
   },
   viewport: "width=device-width, initial-scale=1",
 };
@@ -17,7 +25,8 @@ const org = {
   "@type": "Organization",
   "name": "Gotogate",
   "url": "https://www.gotogate.com",
-  "logo": "https://www.etraveligroup.com/assets/logos/gotogate-logo.svg",
+  "logo":`${host_url}/assets/airline/gotogate.webp`,
+  "image":`${host_url}/assets/airline/gotogate.webp`,
   "description": "Gotogate is a global online travel agency specializing in flight, hotel and cab bookings, operating in over 75 markets and serving ~30 million travellers annually as part of Sweden‑based Etraveli Group.",
   "foundingDate": "1997",
   "foundingLocation": "Uppsala, Sweden",
@@ -113,19 +122,19 @@ const contactSchema = {
 export default function RootLayout({ children }) {
   return (
     <section>
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(org)
         }}
       />
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(faq)
         }}
       />
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(contactSchema)

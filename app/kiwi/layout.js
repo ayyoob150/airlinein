@@ -1,5 +1,13 @@
 // app/layout.js or app/layout.tsx
 
+import Script from 'next/script';
+import { headers } from 'next/headers';
+
+const headersList = headers();
+  const host = headersList.get("host"); 
+  const protocol = host?.includes("local") ? "http" : "https";
+  const host_url = `${protocol}://${host}`;
+
 export const metadata = {
   title: "Kiwi Customer Service Number 215-268-8872",
   description: "Looking for Kiwi customer service? Get the most up-to-date phone numbers, ideal call hours, and step-by-step guidance to resolve your issue—plus, Kiwi get human.",
@@ -7,7 +15,7 @@ export const metadata = {
   keywords: "Kiwi customer service, Kiwi phone number, Kiwi customer phone number, Kiwi customer service phone number, Kiwi customer service phone, call Kiwi, Kiwi support number, Kiwi customer number, Kiwi customer service number, Kiwi 800 number, Kiwi customer support number, Kiwi 800, Kiwi toll free, Kiwi customer service toll free, Kiwi customer service 800, Kiwi customer service 800 number, Kiwi customer service 800 phone, Kiwi contact number, Kiwi contact phone, Kiwi contact, Kiwi customer service contact, Kiwi customer service contact number, Kiwi customer service email, Kiwi customer service email address, Kiwi customer service chat, Kiwi customer service live chat, contact Kiwi, contact Kiwi customer service, Kiwi.com phone number, Kiwi.com customer service, Egencia LLC phone number, Egencia LLC customer service, Kiwi phone number, Kiwi customer service, Kiwi get human,",
   robots: "index, follow",
   alternates: {
-    canonical: "https://yourdomain.com",
+    canonical: `${host_url}/kiwi`,
   },
   viewport: "width=device-width, initial-scale=1",
 };
@@ -18,8 +26,8 @@ const org ={
   "name": "Kiwi.com",
   "alternateName": "SkyPicker.com",
   "url": "https://www.kiwi.com/",
-  "logo": "https://assets.kiwi.com/logo.svg",
-  "image": "https://www.kiwi.com/assets/hero.jpg",
+  "logo": `${host_url}/assets/airline/kiwi.webp`,
+  "image": `${host_url}/assets/airline/kiwi.webp`,
   "description": "Kiwi.com is a Czech online travel agency and fare aggregator, offering virtual interlining across 750+ carriers and ground transportation.",
   "foundingDate": "2012",
   "founders": [
@@ -138,19 +146,19 @@ const contactSchema = {
 export default function RootLayout({ children }) {
   return (
     <section>
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(org)
         }}
       />
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(faq)
         }}
       />
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(contactSchema)
@@ -163,7 +171,7 @@ export default function RootLayout({ children }) {
 
 
 
-{/* <script data-ad-client="ca-pub-5211547430456695" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+{/* <script data-ad-client="ca-pub-5211547430456695" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></cript>
 <link rel="canonical" href="https://gethuman.com/phone-number/Expedia" />
 <link rel="shortcut icon" href="https://gethuman.com/dist/img/logo-32-cropped.png" />
 <link rel="icon" href="https://gethuman.com/dist/img/logo-32-cropped.png" />
@@ -225,4 +233,4 @@ export default function RootLayout({ children }) {
             },
                             "description": "Expedia's best customer service contact information, when to call, what to say, and free AI tools that can call and talk to customer support for you.",
                             "image": "https://gethuman.com/dist/img/logo-v-500.png"
-                        }</script> */}
+                        }</cript> */}
