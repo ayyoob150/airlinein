@@ -1,5 +1,13 @@
 // app/layout.js or app/layout.tsx
 
+import Script from "next/script";
+import { headers } from 'next/headers';
+
+const headersList = headers();
+  const host = headersList.get("host"); 
+  const protocol = host?.includes("local") ? "http" : "https";
+  const host_url = `${protocol}://${host}`;
+
 export const metadata = {
   title: "British Airways Customer Service Number 215-268-8872",
   description: "Looking for British Airways customer service? Get the most up-to-date phone numbers, ideal call hours, and step-by-step guidance to resolve your issue—plus, British Airways get human.",
@@ -7,7 +15,7 @@ export const metadata = {
   keywords: "British Airways customer service, British Airways phone number, British Airways customer phone number, British Airways customer service phone number, British Airways customer service phone, call British Airways, British Airways support number, British Airways customer number, British Airways customer service number, British Airways 800 number, British Airways customer support number, British Airways 800, British Airways toll free, British Airways customer service toll free, British Airways customer service 800, British Airways customer service 800 number, British Airways customer service 800 phone, British Airways contact number, British Airways contact phone, British Airways contact, British Airways customer service contact, British Airways customer service contact number, British Airways customer service email, British Airways customer service email address, British Airways customer service chat, British Airways customer service live chat, contact British Airways, contact British Airways customer service, British Airways.com phone number, British Airways.com customer service, Egencia LLC phone number, Egencia LLC customer service, British Airways phone number, British Airways customer service, British Airways get human,",
   robots: "index, follow",
   alternates: {
-    canonical: "https://yourdomain.com",
+    canonical: `${host_url}/britishAirways`,
   },
   viewport: "width=device-width, initial-scale=1",
 };
@@ -17,8 +25,8 @@ const org = {
   "@type": "Organization",
   "name": "British Airways",
   "url": "https://www.britishairways.com",
-  "logo": "https://www.britishairways.com/etc/designs/britishairways/clientlibs_base/img/logos/ba_logo.png",
-  "image": "https://www.britishairways.com/assets/images/fleet/airbus-a350-1000/airbus-a350-1000-hero.jpg",
+  "logo": `${host_url}/assets/airline/british.webp`,
+  "image": `${host_url}/assets/airline/british.webp`,
   "description": "British Airways is the flag carrier airline of the United Kingdom. Headquartered in London, England, it operates flights to over 180 destinations worldwide from its main hub at Heathrow Airport.",
   "telephone": "+44 344 493 0787",
   "foundingDate": "1974-03-31",
@@ -119,19 +127,19 @@ const contactSchema = {
 export default function RootLayout({ children }) {
   return (
     <section>
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(org)
         }}
       />
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(faq)
         }}
       />
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(contactSchema)

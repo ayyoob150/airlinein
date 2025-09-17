@@ -1,5 +1,13 @@
 // app/layout.js or app/layout.tsx
 
+import Script from 'next/script';
+import { headers } from 'next/headers';
+
+const headersList = headers();
+  const host = headersList.get("host"); 
+  const protocol = host?.includes("local") ? "http" : "https";
+  const host_url = `${protocol}://${host}`;
+
 export const metadata = {
   title: "PSA Airline Customer Service Number 215-268-8872",
   description: "Looking for PSA Airline customer service? Get the most up-to-date phone numbers, ideal call hours, and step-by-step guidance to resolve your issue—plus, PSA Airline get human.",
@@ -7,7 +15,7 @@ export const metadata = {
   keywords: "PSA Airline customer service, PSA Airline phone number, PSA Airline customer phone number, PSA Airline customer service phone number, PSA Airline customer service phone, call PSA Airline, PSA Airline support number, PSA Airline customer number, PSA Airline customer service number, PSA Airline 800 number, PSA Airline customer support number, PSA Airline 800, PSA Airline toll free, PSA Airline customer service toll free, PSA Airline customer service 800, PSA Airline customer service 800 number, PSA Airline customer service 800 phone, PSA Airline contact number, PSA Airline contact phone, PSA Airline contact, PSA Airline customer service contact, PSA Airline customer service contact number, PSA Airline customer service email, PSA Airline customer service email address, PSA Airline customer service chat, PSA Airline customer service live chat, contact PSA Airline, contact PSA Airline customer service, PSA Airline.com phone number, PSA Airline.com customer service, Egencia LLC phone number, Egencia LLC customer service, PSA Airline phone number, PSA Airline customer service, PSA Airline get human,",
   robots: "index, follow",
   alternates: {
-    canonical: "https://yourdomain.com",
+    canonical: `${host_url}/psaAirlines`,
   },
   viewport: "width=device-width, initial-scale=1",
 };
@@ -17,8 +25,8 @@ const org = {
   "@type": "Organization",
   "name": "PSA Airlines, Inc.",
   "url": "https://www.psaairlines.com",
-  "logo": "https://upload.wikimedia.org/wikipedia/commons/f/f0/PSA_Airlines_Logo.svg",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/f/f0/PSA_Airlines_Logo.svg",
+  "logo": `${host_url}/assets/airline/psa.jpg`,
+  "image":`${host_url}/assets/airline/psa.jpg`,
   "description": "PSA Airlines, Inc. is an American regional airline and wholly owned subsidiary of American Airlines Group, operating American Eagle regional jet service across the United States.",
   "telephone": "+1-800-235-0986",
   "foundingDate": "1979",
@@ -120,19 +128,19 @@ const contactSchema = {
 export default function RootLayout({ children }) {
   return (
     <section>
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(org)
         }}
       />
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(faq)
         }}
       />
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(contactSchema)

@@ -1,5 +1,13 @@
 // app/layout.js or app/layout.tsx
 
+import Script from 'next/script';
+import { headers } from 'next/headers';
+
+const headersList = headers();
+  const host = headersList.get("host"); 
+  const protocol = host?.includes("local") ? "http" : "https";
+  const host_url = `${protocol}://${host}`;
+
 export const metadata = {
   title: "United Airline Customer Service Number 215-268-8872",
   description: "Looking for United airline customer service? Get the most up-to-date phone numbers, ideal call hours, and step-by-step guidance to resolve your issue—plus, United airline get human.",
@@ -7,7 +15,7 @@ export const metadata = {
   keywords: "United airline customer service, United airline phone number, United airline customer phone number, United airline customer service phone number, United airline customer service phone, call United airline, United airline support number, United airline customer number, United airline customer service number, United airline 800 number, United airline customer support number, United airline 800, United airline toll free, United airline customer service toll free, United airline customer service 800, United airline customer service 800 number, United airline customer service 800 phone, United airline contact number, United airline contact phone, United airline contact, United airline customer service contact, United airline customer service contact number, United airline customer service email, United airline customer service email address, United airline customer service chat, United airline customer service live chat, contact United airline, contact United airline customer service, United airline.com phone number, United airline.com customer service, Egencia LLC phone number, Egencia LLC customer service, United airline phone number, United airline customer service, United airline get human,",
   robots: "index, follow",
   alternates: {
-    canonical: "https://yourdomain.com",
+    canonical: `${host_url}/united`,
   },
   viewport: "width=device-width, initial-scale=1",
 };
@@ -16,8 +24,8 @@ const org = {
   "@type": "Organization",
   "name": "United Airlines",
   "url": "https://www.united.com",
-  "logo": "https://www.united.com/content/dam/united/en/images/logos/united-logo.svg",
-  "image": "https://www.united.com/content/dam/united/en/us/fly/company/about-us/united-plane.jpg",
+  "logo": `${host_url}/assets/airline/unite.webp`,
+  "image": `${host_url}/assets/airline/unite.webp`,
   "description": "United Airlines, Inc., headquartered in Chicago, Illinois, is a leading U.S. airline operating through eight major hubs and serving hundreds of destinations worldwide.",
   "telephone": "+18776481111",
   "foundingDate": "1931-03-28",
@@ -115,19 +123,19 @@ const contactSchema = {
 export default function RootLayout({ children }) {
   return (
     <section>
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(org)
         }}
       />
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(faq)
         }}
       />
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(contactSchema)

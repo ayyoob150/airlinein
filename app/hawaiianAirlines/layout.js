@@ -1,5 +1,13 @@
 // app/layout.js or app/layout.tsx
 
+import Script from 'next/script';
+import { headers } from 'next/headers';
+
+const headersList = headers();
+  const host = headersList.get("host"); 
+  const protocol = host?.includes("local") ? "http" : "https";
+  const host_url = `${protocol}://${host}`;
+
 export const metadata = {
   title: "Hawaiian Customer Service Number 215-268-8872",
   description: "Looking for Hawaiian customer service? Get the most up-to-date phone numbers, ideal call hours, and step-by-step guidance to resolve your issue—plus, Hawaiian get human.",
@@ -7,7 +15,7 @@ export const metadata = {
   keywords: "Hawaiian customer service, Hawaiian phone number, Hawaiian customer phone number, Hawaiian customer service phone number, Hawaiian customer service phone, call Hawaiian, Hawaiian support number, Hawaiian customer number, Hawaiian customer service number, Hawaiian 800 number, Hawaiian customer support number, Hawaiian 800, Hawaiian toll free, Hawaiian customer service toll free, Hawaiian customer service 800, Hawaiian customer service 800 number, Hawaiian customer service 800 phone, Hawaiian contact number, Hawaiian contact phone, Hawaiian contact, Hawaiian customer service contact, Hawaiian customer service contact number, Hawaiian customer service email, Hawaiian customer service email address, Hawaiian customer service chat, Hawaiian customer service live chat, contact Hawaiian, contact Hawaiian customer service, Hawaiian.com phone number, Hawaiian.com customer service, Egencia LLC phone number, Egencia LLC customer service, Hawaiian phone number, Hawaiian customer service, Hawaiian get human,",
   robots: "index, follow",
   alternates: {
-    canonical: "https://yourdomain.com",
+    canonical: `${host_url}/hawaiianAirlines`,
   },
   viewport: "width=device-width, initial-scale=1",
 };
@@ -17,8 +25,8 @@ const org = {
   "@type": "Organization",
   "name": "Hawaiian Airlines",
   "url": "https://www.hawaiianairlines.com",
-  "logo": "https://www.hawaiianairlines.com/Content/dam/hawaiianair/images/logos/hawaiian-airlines-logo.svg",
-  "image": "https://www.hawaiianairlines.com/Content/dam/hawaiianair/images/travel-info/airplanes/A330-exterior.jpg",
+  "logo": `${host_url}/assets/airline/hawaiian.webp`,
+  "image": `${host_url}/assets/airline/hawaiian.webp`,
   "description": "Hawaiian Airlines is the largest airline in Hawaii. Headquartered in Honolulu, it operates flights to, from, and within the Hawaiian Islands, as well as to North America, Asia, and the South Pacific.",
   "telephone": "+18003673555",
   "foundingDate": "1929-01-30",
@@ -122,19 +130,19 @@ const contactSchema = {
 export default function RootLayout({ children }) {
   return (
     <section>
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(org)
         }}
       />
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(faq)
         }}
       />
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(contactSchema)

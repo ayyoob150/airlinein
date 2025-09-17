@@ -1,5 +1,15 @@
 // app/layout.js or app/layout.tsx
 
+
+import Script from 'next/script';
+import { headers } from 'next/headers';
+
+const headersList = headers();
+  const host = headersList.get("host"); 
+  const protocol = host?.includes("local") ? "http" : "https";
+  const host_url = `${protocol}://${host}`;
+
+
 export const metadata = {
   title: "Delta Customer Service Number 215-268-8872",
   description: "Looking for Delta customer service? Get the most up-to-date phone numbers, ideal call hours, and step-by-step guidance to resolve your issue—plus, Delta get human.",
@@ -7,7 +17,7 @@ export const metadata = {
   keywords: "Delta customer service, Delta phone number, Delta customer phone number, Delta customer service phone number, Delta customer service phone, call Delta, Delta support number, Delta customer number, Delta customer service number, Delta 800 number, Delta customer support number, Delta 800, Delta toll free, Delta customer service toll free, Delta customer service 800, Delta customer service 800 number, Delta customer service 800 phone, Delta contact number, Delta contact phone, Delta contact, Delta customer service contact, Delta customer service contact number, Delta customer service email, Delta customer service email address, Delta customer service chat, Delta customer service live chat, contact Delta, contact Delta customer service, Delta.com phone number, Delta.com customer service, Egencia LLC phone number, Egencia LLC customer service, Delta phone number, Delta customer service, Delta get human,",
   robots: "index, follow",
   alternates: {
-    canonical: "https://yourdomain.com",
+    canonical:`${host_url}/delta`,
   },
   viewport: "width=device-width, initial-scale=1",
 };
@@ -17,8 +27,8 @@ const org = {
   "@type": "Organization",
   "name": "Delta Air Lines",
   "url": "https://www.delta.com",
-  "logo": "https://www.delta.com/etc.clientlibs/delta-com/clientlibs/clientlib-base/resources/img/logo.svg",
-  "image": "https://www.delta.com/content/dam/delta-www/skyclub/hero-images/JFK-club-hero.jpg",
+  "logo": `${host_url}/assets/airline/delta-logo1.webp`,
+  "image":  `${host_url}/assets/airline/delta-logo1.webp`,
   "description": "Delta Air Lines, Inc., headquartered in Atlanta, Georgia, is a major U.S. airline operating through nine hubs. Its largest hub, in terms of passenger traffic and flight departures, is Hartsfield–Jackson Atlanta International Airport.",
   "telephone": "+18001236645",
   "foundingDate": "1928-12-03",
@@ -130,19 +140,19 @@ const contactSchema = {
 export default function RootLayout({ children }) {
   return (
     <section>
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(org)
         }}
       />
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(faq)
         }}
       />
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(contactSchema)

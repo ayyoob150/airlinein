@@ -1,5 +1,13 @@
 // app/layout.js or app/layout.tsx
 
+import Script from 'next/script';
+import { headers } from 'next/headers';
+
+const headersList = headers();
+  const host = headersList.get("host"); 
+  const protocol = host?.includes("local") ? "http" : "https";
+  const host_url = `${protocol}://${host}`;
+
 export const metadata = {
   title: "Frontier Customer Service Number 215-268-8872",
   description: "Looking for Frontier customer service? Get the most up-to-date phone numbers, ideal call hours, and step-by-step guidance to resolve your issue—plus, Frontier get human.",
@@ -7,7 +15,7 @@ export const metadata = {
   keywords: "Frontier customer service, Frontier phone number, Frontier customer phone number, Frontier customer service phone number, Frontier customer service phone, call Frontier, Frontier support number, Frontier customer number, Frontier customer service number, Frontier 800 number, Frontier customer support number, Frontier 800, Frontier toll free, Frontier customer service toll free, Frontier customer service 800, Frontier customer service 800 number, Frontier customer service 800 phone, Frontier contact number, Frontier contact phone, Frontier contact, Frontier customer service contact, Frontier customer service contact number, Frontier customer service email, Frontier customer service email address, Frontier customer service chat, Frontier customer service live chat, contact Frontier, contact Frontier customer service, Frontier.com phone number, Frontier.com customer service, Egencia LLC phone number, Egencia LLC customer service, Frontier phone number, Frontier customer service, Frontier get human,",
   robots: "index, follow",
   alternates: {
-    canonical: "https://yourdomain.com",
+    canonical: `${host_url}/frontierAirlines`,
   },
   viewport: "width=device-width, initial-scale=1",
 };
@@ -17,8 +25,8 @@ const org = {
   "@type": "Organization",
   "name": "Frontier Airlines",
   "url": "https://www.flyfrontier.com",
-  "logo": "https://www.flyfrontier.com/themes/custom/ffd_theme/logo.svg",
-  "image": "https://www.flyfrontier.com/-/media/images/homepage/frontier-airlines-aircraft.jpg",
+  "logo": `${host_url}/assets/airline/frontier.webp`,
+  "image":`${host_url}/assets/airline/frontier.webp`,
   "description": "Frontier Airlines is an American ultra low-cost carrier headquartered in Denver, Colorado, operating flights to over 115 destinations across the United States, Mexico, the Caribbean, and Central America.",
   "telephone": "+1-801-401-9000",
   "foundingDate": "1994-02-08",
@@ -123,19 +131,19 @@ const contactSchema = {
 export default function RootLayout({ children }) {
   return (
     <section>
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(org)
         }}
       />
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(faq)
         }}
       />
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(contactSchema)
