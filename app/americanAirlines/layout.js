@@ -1,13 +1,13 @@
 // app/layout.js or app/layout.tsx
 
 import Script from "next/script";
-import { headers } from 'next/headers';
+import { headers } from "next/headers";
 
 const headersList = headers();
-  const host = headersList.get("host"); 
-  const protocol = host?.includes("local") ? "http" : "https";
-  const host_url = `${protocol}://${host}`;
-
+const host = headersList.get("host");
+const protocol = host?.includes("local") ? "http" : "https";
+const host_url = `${protocol}://${host}`;
+/// check
 export const metadata = {
   title: "American Airline Customer Service Number 215-268-8872",
   description:
@@ -17,7 +17,7 @@ export const metadata = {
     "American Airline customer service, American Airline phone number, American Airline customer phone number, American Airline customer service phone number, American Airline customer service phone, call American Airline, American Airline support number, American Airline customer number, American Airline customer service number, American Airline 800 number, American Airline customer support number, American Airline 800, American Airline toll free, American Airline customer service toll free, American Airline customer service 800, American Airline customer service 800 number, American Airline customer service 800 phone, American Airline contact number, American Airline contact phone, American Airline contact, American Airline customer service contact, American Airline customer service contact number, American Airline customer service email, American Airline customer service email address, American Airline customer service chat, American Airline customer service live chat, contact American Airline, contact American Airline customer service, American Airline.com phone number, American Airline.com customer service, Egencia LLC phone number, Egencia LLC customer service, American Airline phone number, American Airline customer service, American Airline get human,",
   robots: "index, follow",
   alternates: {
-    canonical:`${host_url}/americanAirlines`,
+    canonical: `${host_url}/americanAirlines`,
   },
   viewport: "width=device-width, initial-scale=1",
 };
@@ -28,8 +28,7 @@ const org = {
   name: "American Airlines",
   url: "https://www.aa.com",
   logo: `${host_url}/assets/airline/american.png`,
-  image:
-    `${host_url}/assets/airline/american.png`,
+  image: `${host_url}/assets/airline/american.png`,
   description:
     "American Airlines, headquartered in Fort Worth, Texas, is one of the largest airlines in the world. It operates an extensive international and domestic network with hubs in cities like Dallas/Fort Worth, Charlotte, and Chicago.",
   telephone: "+1-800-433-7300",
