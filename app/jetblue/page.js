@@ -44,7 +44,10 @@ export default function Page() {
 
       {/* Fleet Section */}
       <section>
-        <h2 className="text-2xl font-medium mb-4 text-blue-800">✈️ Our Fleet: Modern, Sustainable & Expanding</h2>
+      <div className="w-auto h-70 relative rounded-xl overflow-hidden shadow-md">
+      <Image src="/assets/image/200227130016-jetblule-a220-rendering.jpg" alt="JetBlue Aircraft" width={600} height={280}  className="w-full h-full object-cover rounded-2xl" />
+          </div>
+        <h2 className="text-2xl font-medium mb-4 mt-5 text-blue-800">✈️ Our Fleet: Modern, Sustainable & Expanding</h2>
         <div className="grid md:grid-cols-2 gap-6">
           <ul className="list-disc pl-6 text-lg space-y-1">
             <li>Airbus A320-200</li>
@@ -54,9 +57,6 @@ export default function Page() {
             <li>Embraer E190 (phasing out)</li>
             <li>Future: Airbus A321XLR</li>
           </ul>
-          <div className="w-full h-60 relative rounded-xl overflow-hidden shadow-md">
-            <Image src="/assets/home/airline10.png" alt="JetBlue Fleet" width={300} height={300} />
-          </div>
         </div>
         <p className="text-lg mt-4">Average Fleet Size: 280+ aircraft and growing. Designed for comfort and sustainability.</p>
       </section>
@@ -171,9 +171,12 @@ export default function Page() {
       </section>
 
       <div>
-        <h1 className="text-2xl md:text-2xl font-medium text-sky-900">JetBlue Airways: A Standout in U.S. Aviation</h1>
-        <Image src="/placeholder-jetblue.jpg" alt="JetBlue Aircraft" width={300} height={300} className="rounded-2xl shadow-md" />
-        <p className="text-lg leading-relaxed">
+      <div className="w-auto h-full relative rounded-xl overflow-hidden shadow-md">
+            <Image src="/assets/image/call-center agent with headset working.webp" alt="JetBlue Fleet" width={300} height={300}  className="w-full h-full object-cover rounded-xl" />
+          </div>
+        <h1 className="text-2xl mt-5 md:text-2xl font-medium text-sky-900">JetBlue Airways: A Standout in U.S. Aviation</h1>
+       
+        <p className="text-lg  leading-relaxed">
           JetBlue blends affordability, comfort, and service into a modern airline experience. It proves low-cost doesn’t have to mean low-quality — especially in the domestic U.S. market.
         </p>
       </div>
@@ -197,7 +200,7 @@ export default function Page() {
       {/** Cabin Comfort */}
       <div>
         <h2 className="text-2xl font-medium">🛫 Cabin Comfort: Roomy & Refined</h2>
-        <Image src="/placeholder-cabin.jpg" alt="JetBlue Cabin" width={300} height={300} className="rounded-2xl shadow-md" />
+        {/* <Image src="/placeholder-cabin.jpg" alt="JetBlue Cabin" width={300} height={300} className="rounded-2xl shadow-md" /> */}
         <ul className="list-disc list-inside text-lg leading-relaxed">
           <li>Ample legroom in all economy seats</li>
           <li>Leather seats with adjustable headrests</li>
@@ -233,7 +236,7 @@ export default function Page() {
       {/** Mint Class */}
       <div>
         <h2 className="text-2xl font-medium">🛋️ Mint Class: Boutique Luxury</h2>
-        <Image src="/placeholder-mint.jpg" alt="Mint Class" width={300} height={300} className="rounded-2xl shadow-md" />
+        {/* <Image src="/placeholder-mint.jpg" alt="Mint Class" width={300} height={300} className="rounded-2xl shadow-md" /> */}
         <ul className="list-disc list-inside text-lg leading-relaxed">
           <li>Lie-flat suites with privacy doors</li>
           <li>Priority services and exclusive amenity kits</li>

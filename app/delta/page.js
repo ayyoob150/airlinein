@@ -96,13 +96,13 @@ const sections = [
     <h2 className="text-2xl font-semibold">
       🎨 Branding & Aircraft Livery Evolution
     </h2>
-    <Image
+    {/* <Image
       src="https://image.cnbcfm.com/api/v1/image/107370758-1707399313990-gettyimages-1986207874-AFP_34HW3M3.jpeg?v=1726158829&w=1920&h=1080"
       alt="Fleet Overview"
       width={1200}
       height={600}
       className="rounded-2xl shadow-md h-70"
-    />
+    /> */}
     <p>Delta’s brand identity has evolved significantly over the decades:</p>
     <ul className="list-disc list-inside text-lg leading-relaxed">
       <li>Widget Era (1962–1997)</li>
@@ -128,13 +128,13 @@ const sections = [
   </>,
   <>
     <h2 className="text-2xl font-semibold">🧭 Services & Global Alliances</h2>
-    <Image
+    {/* <Image
       src="https://image.cnbcfm.com/api/v1/image/107370758-1707399313990-gettyimages-1986207874-AFP_34HW3M3.jpeg?v=1726158829&w=1920&h=1080"
       alt="Fleet Overview"
       width={1200}
       height={600}
       className="rounded-2xl shadow-md h-70"
-    />
+    /> */}
     <p className="text-lg leading-relaxed">
       As a founding member of the SkyTeam global alliance, Delta offers seamless
       connectivity with partner airlines around the world. Its SkyMiles loyalty
@@ -151,13 +151,13 @@ const sections = [
   </>,
   <>
     <h2 className="text-2xl font-semibold">💰 Financial Performance</h2>
-    <Image
+    {/* <Image
       src="https://image.cnbcfm.com/api/v1/image/107370758-1707399313990-gettyimages-1986207874-AFP_34HW3M3.jpeg?v=1726158829&w=1920&h=1080"
       alt="Fleet Overview"
       width={1200}
       height={600}
       className="rounded-2xl shadow-md h-70"
-    />
+    /> */}
     <p className="text-lg leading-relaxed">
       In 2023, Delta reported $58 billion in operating revenue, with passenger
       services contributing approximately $48.9 billion. Looking ahead, the
@@ -253,13 +253,13 @@ const sections = [
           A Top-Ranked U.S. Airline Delivering Exceptional Travel Experiences
         </p>
         <div className="w-full h-64 md:h-96 relative mx-auto">
-          <Image
-            src="/placeholder-hero.jpg"
-            alt="Delta Airlines"
-            layout="fill"
-            objectFit="cover"
-            className="rounded-2xl shadow-lg"
-          />
+         <Image
+      src="https://image.cnbcfm.com/api/v1/image/107370758-1707399313990-gettyimages-1986207874-AFP_34HW3M3.jpeg?v=1726158829&w=1920&h=1080"
+      alt="Fleet Overview"
+      width={1200}
+      height={600}
+      className="rounded-2xl shadow-md h-70"
+    />
         </div>
       </section>
       <>
