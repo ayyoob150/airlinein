@@ -25,6 +25,7 @@ export default function Page() {
                     </p>
                 <p className="-mt-4">Alaska Airlines is a top-rated American carrier known for its exceptional customer service, reliable on-time performance, and strong West Coast presence. Headquartered in Seattle, the airline operates over 120 destinations across the U.S., Mexico, Canada, and Central America, with major hubs in Seattle, Portland, Los Angeles, and Anchorage. As a member of the Oneworld Alliance, Alaska offers seamless global connectivity and a highly rewarding Mileage Plan loyalty program. With a modern fleet, eco-conscious initiatives aimed at achieving net-zero emissions by 2040, and a focus on comfort and hospitality, Alaska Airlines consistently delivers a travel experience that is both efficient and heartfelt.
                 </p>
+                <Image src="/assets/image/alaska.webp" alt="Spirit Business Model" width={1200} height={600} className="h-100 mt-3 mb-5 rounded-2xl shadow-md" />
 
                 <section className="mb-12">
                     <h2 className="text-2xl font-semibold mb-4">📌 Basic Information</h2>
@@ -153,6 +154,7 @@ export default function Page() {
                 </section>
                 <div className="mb-12 text-">
                     <h1 className="text-xl md:text-2xl font-bold mb-4">🌟 Alaska Airlines Review: Fly the Friendly Skies of the Pacific Northwest ✈️🌲</h1>
+                    <Image src="/assets/image/goodAlaska.jpg" alt="Spirit Business Model" width={1200} height={600} className="h-100 mt-3 mb-5 rounded-2xl shadow-md" />
                     <p className="text-lg md:text-xl">
                         When it comes to dependable service, genuine hospitality, and a strong sense of community and sustainability, Alaska Airlines stands out as one of America’s finest airlines.
                     </p>

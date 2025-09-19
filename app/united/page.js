@@ -75,7 +75,7 @@ export default function Page() {
               🌐 Extensive Network and Global Operations
             </h2>
             <Image
-              src="/placeholder-network.jpg"
+              src="/assets/image/network.jpg"
               alt="Global Operations"
               width={300}
               height={300}
@@ -116,13 +116,13 @@ export default function Page() {
             <h2 className="text-2xl font-medium">
               🌐 Global Reach & Market Focus
             </h2>
-            <Image
+            {/* <Image
               src="/placeholder-network.jpg"
               alt="Global Operations"
               width={300}
               height={300}
               className="rounded-2xl shadow-md w-full h-70"
-            />
+            /> */}
             <p className="text-lg leading-relaxed">
               United is particularly renowned for its strength in:
             </p>
@@ -162,11 +162,11 @@ export default function Page() {
           <div className="space-y-4 mt-10">
             <h2 className="text-2xl font-medium">🛩️ Modern Fleet Overview</h2>
             <Image
-              src="/placeholder-fleet.jpg"
+              src="/assets/image/modernFleet.jpg"
               alt="Fleet Overview"
               width={300}
               height={300}
-              className="rounded-2xl shadow-md w-full h-70"
+              className="rounded-2xl shadow-md w-full h-100"
             />
             <p className="text-lg leading-relaxed">
               United Airlines operates one of the industry’s most diverse and
@@ -222,13 +222,13 @@ export default function Page() {
             <h2 className="text-2xl font-medium">
               🤝 Strategic Alliances and Partnerships
             </h2>
-            <Image
+            {/* <Image
               src="/placeholder-partnerships.jpg"
               alt="Alliances"
               width={300}
               height={300}
               className="rounded-2xl shadow-md w-full h-70"
-            />
+            /> */}
             <strong className="text-lg leading-relaxed">
               Star Alliance Leadership
             </strong>
@@ -253,13 +253,13 @@ export default function Page() {
             <h2 className="text-2xl font-medium">
               💼 MileagePlus – The Premier Loyalty Program
             </h2>
-            <Image
+            {/* <Image
               src="/placeholder-loyalty.jpg"
               alt="MileagePlus"
               width={300}
               height={300}
               className="rounded-2xl shadow-md w-full h-70"
-            />
+            /> */}
 
             <p className="text-lg leading-relaxed">
               United’s <strong>MileagePlus</strong> program is widely regarded as
@@ -314,13 +314,13 @@ export default function Page() {
             <h2 className="text-2xl font-medium">
               📜 Milestones in United Airlines’ History
             </h2>
-            <Image
+            {/* <Image
               src="/placeholder-history.jpg"
               alt="Milestones"
               width={300}
               height={300}
               className="rounded-2xl shadow-md w-full h-70"
-            />
+            /> */}
             <ul className="list-disc list-inside text-lg">
               <li>
                 <strong>1926:</strong> Launched as Varney Air Lines, pioneering
@@ -356,13 +356,13 @@ export default function Page() {
             <h2 className="text-2xl font-medium">
               🔧 Innovation & Passenger Experience Enhancements
             </h2>
-            <Image
+            {/* <Image
               src="/placeholder-cabin.jpg"
               alt="Innovation"
               width={300}
               height={300}
               className="rounded-2xl shadow-md w-full h-70"
-            />
+            /> */}
             <p className="text-lg leading-relaxed">
               United Airlines continually elevates the in-flight experience
               through technological and service innovations:
@@ -452,13 +452,13 @@ export default function Page() {
             <h3 className="text-xl md:text-2xl font-bold text-blue-900">
               A Seamless Travel Experience
             </h3>
-            <Image
+            {/* <Image
               src="/placeholder-united.jpg"
               alt="United Airlines aircraft"
               width={300}
               height={300}
               className="rounded-2xl shadow-md w-full h-70"
-            />
+            /> */}
             <p className="text-lg leading-relaxed">
               Recently had the pleasure of flying with United Airlines, and must
               say, overall experience was highly satisfying. Below is an in-depth
@@ -489,11 +489,11 @@ export default function Page() {
               🛫 Modern Fleet Offering Exceptional Comfort
             </h2>
             <Image
-              src="/placeholder-cabin.jpg"
+              src="/assets/image/comfort.png"
               alt="Modern Cabin"
               width={300}
               height={300}
-              className="rounded-2xl shadow-md w-full h-70"
+              className="rounded-2xl shadow-md w-full h-80"
             />
             <p>
               United’s commitment to maintaining a modern and comfortable fleet
@@ -565,13 +565,13 @@ export default function Page() {
             <h2 className="text-2xl font-medium">
               🎬 Engaging In-Flight Entertainment and Connectivity
             </h2>
-            <Image
+            {/* <Image
               src="/placeholder-entertainment.jpg"
               alt="In-flight Entertainment"
               width={300}
               height={300}
               className="rounded-2xl shadow-md w-full h-70"
-            />
+            /> */}
             <p className="text-lg leading-relaxed">
               United offers a diverse in-flight entertainment selection, featuring
               an impressive library of movies, television shows, and interactive

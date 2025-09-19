@@ -29,6 +29,7 @@ export default function SunCountryPage() {
                     <p>
                         Whether you're flying for a family vacation, a seasonal holiday, or a business trip, Sun Country offers a travel experience that balances affordability, comfort, and customer-first service — all while keeping you connected to sunny destinations and major U.S. cities.
                     </p>
+                    <Image src="/assets/image/airlines.jpg" alt="Spirit Business Model" width={1200} height={600} className="rounded-2xl shadow-md" />
                 </section>
 
                 <section className="mb-10">
@@ -172,6 +173,7 @@ export default function SunCountryPage() {
 
                 <section className="space-y-6 mb-10">
                     <h2 className="text-2xl font-semibold">✈️ Comfort Without Compromise</h2>
+                    <Image src="/assets/image/IMG.jpeg" alt="Spirit Business Model" width={1200} height={600} className="rounded-2xl shadow-md" />
                     <p>
                         Despite its budget status, Sun Country impresses with its modern Boeing 737-800 fleet, offering a cleaner, more comfortable ride than many other low-cost carriers. Seats are ergonomically designed, and the airline offers three cabin experiences to meet different needs:
                     </p>

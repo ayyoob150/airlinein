@@ -29,7 +29,7 @@ export default function SpiritAirlinesPage() {
 
       <div className="space-y-6 text-secondaryblue">
         <h2 className="text-2xl font-medium">💰 Business Model & Strategy</h2>
-        <Image src="/placeholder-strategy.jpg" alt="Spirit Business Model" width={1200} height={600} className="rounded-2xl shadow-md" />
+        <Image src="/assets/image/bus-structure.png" alt="Spirit Business Model" width={1200} height={600} className="rounded-2xl shadow-md" />
         <p className="text-lg leading-relaxed">
           Spirit pioneered the ULCC model in North America, offering low base fares and a la carte services. Major revenue drivers include bag fees, seat selection, and programs like the $9 Fare Club and Saver$ Club.
         </p>
@@ -37,7 +37,7 @@ export default function SpiritAirlinesPage() {
 
       <div className="space-y-6">
         <h2 className="text-2xl font-medium">🛫 Operational Challenges & Financial Performance</h2>
-        <Image src="/placeholder-performance.jpg" alt="Financial Performance" width={1200} height={600} className="rounded-2xl shadow-md" />
+        {/* <Image src="/placeholder-performance.jpg" alt="Financial Performance" width={1200} height={600} className="rounded-2xl shadow-md" /> */}
         <p className="text-lg leading-relaxed">
           Spirit saw losses from 2020–2024 due to the pandemic, inflation, and engine-related groundings. Capacity was cut 20–24% to stabilize finances.
         </p>
@@ -45,7 +45,7 @@ export default function SpiritAirlinesPage() {
 
       <div className="space-y-6">
         <h2 className="text-2xl font-medium">📉 Chapter 11 Bankruptcy & Restructuring</h2>
-        <Image src="/placeholder-bankruptcy.jpg" alt="Chapter 11 Spirit" width={1200} height={600} className="rounded-2xl shadow-md" />
+        {/* <Image src="/placeholder-bankruptcy.jpg" alt="Chapter 11 Spirit" width={1200} height={600} className="rounded-2xl shadow-md" /> */}
         <p className="text-lg leading-relaxed">
           Spirit filed for Chapter 11 in Nov 2024. It emerged in March 2025 after securing $350M in equity and converting $795M debt to equity. Ownership shifted to firms like Pimco and Ares.
         </p>
@@ -53,7 +53,7 @@ export default function SpiritAirlinesPage() {
 
       <div className="space-y-6">
         <h2 className="text-2xl font-medium">🔄 Leadership & Operational Reset</h2>
-        <Image src="/placeholder-leadership.jpg" alt="Spirit Leadership Changes" width={1200} height={600} className="rounded-2xl shadow-md" />
+        {/* <Image src="/placeholder-leadership.jpg" alt="Spirit Leadership Changes" width={1200} height={600} className="rounded-2xl shadow-md" /> */}
         <p className="text-lg leading-relaxed">
           CEO Dave Davis joined in April 2025. Spirit deferred new deliveries, cut costs by selling aircraft, and reduced staffing. Fitch gave a CCC+ upgrade despite 8–10× EBITDAR debt ratios.
         </p>
@@ -61,7 +61,7 @@ export default function SpiritAirlinesPage() {
 
       <div className="space-y-6">
         <h2 className="text-2xl font-medium">🧭 Strategy Pivot & Outlook</h2>
-        <Image src="/placeholder-strategy-shift.jpg" alt="Strategic Direction" width={1200} height={600} className="rounded-2xl shadow-md" />
+        {/* <Image src="/assets/image/pivot.webp" alt="Strategic Direction" width={1200} height={600} className="rounded-2xl shadow-md" /> */}
         <p className="text-lg leading-relaxed">
           Spirit is evolving into a value-focused carrier with Go Comfy seating and Go Big fares. Its Free Spirit® program is enhanced, and MIA is being developed as a strategic hub.
         </p>
@@ -69,7 +69,7 @@ export default function SpiritAirlinesPage() {
 
       <div className="space-y-6">
         <h2 className="text-2xl font-medium">📊 Financial Outlook & Analyst View</h2>
-        <Image src="/placeholder-analytics.jpg" alt="Financial Forecast" width={1200} height={600} className="rounded-2xl shadow-md" />
+        {/* <Image src="/placeholder-analytics.jpg" alt="Financial Forecast" width={1200} height={600} className="rounded-2xl shadow-md" /> */}
         <p className="text-lg leading-relaxed">
           Spirit targets profitability by 2026. Execution risks remain high, with pricing pressure and fleet issues ongoing. Analysts expect modest recovery if strategies succeed.
         </p>
@@ -85,8 +85,8 @@ export default function SpiritAirlinesPage() {
       <div
         className="space-y-6"
       >
-        <h1 className="text-4xl md:text-6xl font-medium text-slate-600">✈️ Spirit Airlines: A Smart Choice</h1>
-        <Image src="/placeholder-cover.jpg" alt="Spirit Airlines" width={1200} height={600} className="rounded-xl shadow-md" />
+        <h1 className="text-2xl md:text-4xl font-medium text-slate-600">✈️ Spirit Airlines: A Smart Choice</h1>
+        {/* <Image src="/placeholder-cover.jpg" alt="Spirit Airlines" width={1200} height={600} className="rounded-xl shadow-md" /> */}
         <p className="text-lg leading-relaxed">
           Spirit Airlines is one of America’s few ultra-low-cost carriers (ULCCs), offering no-frills, affordable travel across 90+ destinations. If you're flexible and budget-conscious, here's why Spirit may be your ideal choice.
         </p>
@@ -95,43 +95,43 @@ export default function SpiritAirlinesPage() {
       {[
         {
           title: '1. ✈️ Ultra-Affordable Travel – True Budget Flying',
-          image: '/placeholder-affordable.jpg',
+          image: '/assets/image/affordable.jpg',
           text: `Spirit’s pricing model prioritizes low fares. Base fares can be under $100 with a personal item included—great for light packers. All extras like bags and meals are optional.`,
           quote: '“I flew from Orlando to Chicago and back for under $50 with just a backpack.”'
         },
         {
           title: '2. 🛩️ Young, Modern Airbus Fleet',
-          image: '/placeholder-fleet.jpg',
+          // image: '/placeholder-fleet.jpg',
           text: `Spirit’s Airbus-only fleet has an average age of under 7 years. A320neos are fuel-efficient and quieter with refreshed interiors.`,
           quote: '“The Big Front Seat felt premium without the hefty price tag.”'
         },
         {
           title: '3. 💺 Big Front Seat – Premium Comfort, Budget Price',
-          image: '/placeholder-seating.jpg',
+          // image: '/placeholder-seating.jpg',
           text: `Enjoy first-class-style comfort starting around $25. Wider seats and up to 36" pitch. No frills, just space.`,
           quote: '“90% of first class for 10% of the cost.”'
         },
         {
           title: '4. ⏱️ On-Time Performance Improvements',
-          image: '/placeholder-ontime.jpg',
+          // image: '/placeholder-ontime.jpg',
           text: `Improved scheduling and handling have placed Spirit near the top of DOT on-time rankings in recent months.`,
           quote: '“We took off early and landed ahead of schedule.”'
         },
         {
           title: '5. 💵 Transparent Pricing – Pay Only for What You Use',
-          image: '/placeholder-pricing.jpg',
+          // image: '/placeholder-pricing.jpg',
           text: `Spirit’s website clearly breaks down fees. Saver$ Club gives added discounts on fares and extras.`,
           quote: '“You see what you pay for—no tricks.”'
         },
         {
           title: '6. 🌱 Eco-Conscious Operations',
-          image: '/placeholder-eco.jpg',
+          // image: '/placeholder-eco.jpg',
           text: `Newer aircraft and high-density seating lower emissions per passenger.`,
           quote: '“Surprisingly green for short trips.”'
         },
         {
           title: '7. 🎁 Free Spirit Loyalty Program – Quick to Reward',
-          image: '/placeholder-loyalty.jpg',
+          image: '/assets/image/download.jpg',
           text: `Earn points based on spend. Easy redemptions and no expiration if you stay active.`,
           quote: '“Booked a free flight after just a few trips.”'
         }
@@ -141,7 +141,15 @@ export default function SpiritAirlinesPage() {
           className="space-y-6"
         >
           <h2 className="text-2xl font-medium text-slate-700">{section.title}</h2>
-          <Image src={section.image} alt={section.title} width={1200} height={600} className="rounded-xl shadow" />
+          {section?.image && (
+  <Image
+    src={section.image}
+    alt={section.title }
+    width={1200}
+    height={500}
+    className="rounded-xl shadow"
+  />
+)}
           <p className="text-lg leading-relaxed">{section.text}</p>
           <blockquote className="italic text-gray-600 border-l-4 pl-4 border-slate-400">{section.quote}</blockquote>
         </div>

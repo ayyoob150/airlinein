@@ -22,6 +22,7 @@ export default function Page() {
                 <section>
                     <p>American Airlines was born from a consolidation of more than 80 small airlines in the 1930s. Charles Lindbergh, one of aviation’s pioneers, was its first pilot. It became the first airline to fly the Douglas DC-3, which helped usher in the modern era of passenger air travel.</p>
                     <p className="mt-2">Over the decades, American has acquired several other carriers, including Trans World Airlines (TWA) in 2001, and merged with US Airways in 2013 to become the world’s largest airline.</p>
+                    <Image src="/assets/image/americans.jpg" alt="JetBlue Fleet" width={300} height={300}  className="w-full h-full mt-4 object-cover rounded-xl" />
                 </section>
 
                 <section>
@@ -74,6 +75,7 @@ export default function Page() {
 
                 <section>
                     <h2 className="text-2xl font-semibold mb-2">🎧 In-Flight Entertainment & Connectivity</h2>
+                    <Image src="/assets/image/entertain.jpg" alt="JetBlue Fleet" width={300} height={300}  className="w-full h-full mt-5 mb-5 object-cover rounded-xl" />
                     <ul className="list-disc list-inside">
                         <li>Wi-Fi on nearly all aircraft (paid)</li>
                         <li>Seatback screens or app streaming</li>

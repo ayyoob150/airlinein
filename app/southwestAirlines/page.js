@@ -21,6 +21,7 @@ export default function Page() {
                     <p className="text-lg md:text-xl max-w-4xl mx-auto">
                         Southwest Airlines has carved out a unique space in the U.S. aviation industry as a trailblazer in low-cost air travel while consistently maintaining a high level of customer satisfaction. Headquartered in Dallas, Texas, Southwest is the largest domestic airline in the United States based on the number of passengers carried. Known for its “bags fly free” policy, no change fees, open seating, and friendly crew, the airline has become a favorite among budget-conscious travelers, families, and business flyers alike.
                     </p>
+                    <Image src="/assets/image/southwest.webp" alt="Spirit Business Model" width={1200} height={600} className=" h-100 mt-5 rounded-2xl shadow-md" />
                 </section>
 
                 <section>
@@ -191,6 +192,7 @@ export default function Page() {
 
                 <section>
                     <h2 className="text-2xl font-semibold mb-3">🛬 Comfortable, Efficient, and Friendly Flying Experience</h2>
+                    <Image src="/assets/image/friendly.webp" alt="Spirit Business Model" width={1200} height={600} className=" h-100 mt-5 mb-5 rounded-2xl shadow-md" />
                     <ul className="list-disc list-inside space-y-1">
                         <li>Spacious cabins with leather seating and generous legroom</li>
                         <li>A relaxed and open seating policy, letting passengers choose their preferred seat</li>
