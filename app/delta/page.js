@@ -254,7 +254,7 @@ const sections = [
         </p>
         <div className="w-full h-64 md:h-96 relative mx-auto">
          <Image
-      src="https://image.cnbcfm.com/api/v1/image/107370758-1707399313990-gettyimages-1986207874-AFP_34HW3M3.jpeg?v=1726158829&w=1920&h=1080"
+      src="/assets/image/Delta.jpg"
       alt="Fleet Overview"
       width={1200}
       height={600}

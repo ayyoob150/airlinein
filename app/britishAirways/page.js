@@ -21,6 +21,13 @@ export default function Page() {
                     <p className="text-lg leading-relaxed mt-2">
                         British Airways (BA) is the flag carrier airline of the United Kingdom and one of the most recognized names in global aviation. Headquartered in London, England, and operating from its primary hub at London Heathrow Airport (LHR), British Airways is known for its legacy, premium service, global connectivity, and commitment to innovation and sustainability.
                     </p>
+                    <Image
+            src="/assets/image/britishA.jpg"
+            alt="JetBlue Fleet"
+            width={300}
+            height={300}
+            className="w-full h-full object-cover mt-5 mb-5 rounded-xl"
+          />
                 </section>
 
                 <section>
@@ -113,6 +120,13 @@ export default function Page() {
                 <section>
                     <h2 className="text-2xl font-semibold">🛎️ Cabin Classes & Services</h2>
                     <div className="space-y-4 text-lg">
+                    <Image
+            src="/assets/image/first-customer.avif"
+            alt="JetBlue Fleet"
+            width={300}
+            height={300}
+            className="w-full h-full object-cover mt-5 mb-5 rounded-xl"
+          />
                         <div>
                             <p className="font-semibold">👑 First Class</p>
                             <ul className="list-disc list-inside">

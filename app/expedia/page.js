@@ -22,6 +22,13 @@ export default function Page() {
                     <p>
                         Expedia.com stands as one of the leading global online travel platforms, offering a seamless way for travelers to book everything they need for their trips—from flights and hotels to car rentals, cruises, vacation bundles, and on-the-ground experiences. It’s a go-to site for millions looking to plan and manage their travel easily and affordably.
                     </p>
+                    <Image
+      src="/assets/image/Expedia.jpg"
+      alt="Fleet Overview"
+      width={1200}
+      height={600}
+      className="rounded-2xl shadow-md mt-5 h-70"
+    />
                 </section>
 
                 <section>
@@ -162,6 +169,15 @@ export default function Page() {
                         <li>High-quality photos and 360° views</li>
                         <li>Full list of amenities</li>
                         <li>Clear cancellation and refund terms</li>
+
+                        <Image
+      src="/assets/image/reliable.webp"
+      alt="Fleet Overview"
+      width={1200}
+      height={600}
+      className="rounded-2xl shadow-md mt-5 h-70"
+    />
+
                     </ul>
 
                     <h3 className="text-2xl font-semibold mt-6">Customer Support That Responds</h3>

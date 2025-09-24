@@ -22,6 +22,14 @@ export default function Page() {
                     <p className="text-lg md:text-lg text-gray-700">
                         PSA Airlines, a wholly owned subsidiary of American Airlines Group, is one of the key regional players in the U.S. aviation industry. With its operations flying under the American Eagle brand, PSA is an essential component of American Airlines’ regional network, connecting smaller cities and communities to major hubs across the United States.
                     </p>
+
+                    <Image
+            src="/assets/image/psa.jpg"
+            alt="Fleet Overview"
+            width={1200}
+            height={600}
+            className="rounded-2xl shadow-md mt-5 mb-5 h-70"
+          />
                 </div>
 
                 <section className="mb-10">
@@ -132,6 +140,15 @@ export default function Page() {
 
                 <section className="mb-10">
                     <h2 className="text-2xl md:text-2xl font-semibold mb-4">💺 Modern, Comfortable Aircraft</h2>
+                    
+                    <Image
+            src="/assets/image/Austrian.jpg"
+            alt="Fleet Overview"
+            width={1200}
+            height={600}
+            className="rounded-2xl shadow-md mt-5 mb-5 h-70"
+          />
+
                     <p className="text-gray-700">
                         PSA operates an all-jet fleet of Bombardier CRJ aircraft, including:
                     </p>
